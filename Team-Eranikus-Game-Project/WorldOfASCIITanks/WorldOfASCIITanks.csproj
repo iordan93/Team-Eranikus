@@ -41,17 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameObject\World\Items\Potions.cs" />
-    <Compile Include="GameObject\World\Items\Spell.cs" />
-    <Compile Include="GameObject\World\Items\Weapons.cs" />
-    <Compile Include="GameObject\World\Map\Wall.cs" />
-    <Compile Include="GameObject\World\Movable\MainCharacter.cs" />
-    <Compile Include="GameObject\World\Movable\NPC.cs" />
+    <Compile Include="GameOBject\World\GameObject.cs" />
+    <Compile Include="GameOBject\World\Items\Potions.cs" />
+    <Compile Include="GameOBject\World\Items\Spell.cs" />
+    <Compile Include="GameOBject\World\Items\Weapons.cs" />
+    <Compile Include="GameOBject\World\Map\Wall.cs" />
+    <Compile Include="GameOBject\World\Movable\MainCharacter.cs" />
+    <Compile Include="GameOBject\World\Movable\NPC.cs" />
+    <Compile Include="GameOBject\World\Rendering\MatrixCoords.cs" />
+    <Compile Include="GameOBject\World\Rendering\ConsoleRenderer.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\ICollectible.cs" />
     <Compile Include="Interfaces\ICollidable.cs" />
     <Compile Include="Interfaces\IMovable.cs" />
     <Compile Include="Interfaces\IRenderable.cs" />
+    <Compile Include="Interfaces\IRenderer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,7 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameEngine\" />
-    <Folder Include="GameObject\Menu\" />
+    <Folder Include="GameOBject\Menu\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

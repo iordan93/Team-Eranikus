@@ -1,12 +1,21 @@
-﻿namespace WorldOfASCIITanks.GameObject.World.Movable
+﻿
+
+namespace WorldOfASCIITanks.GameObject.World.Movable
 {
+    using WorldOfASCIITanks.GameObject.World.Rendering;
     using WorldOfASCIITanks.Interfaces;
 
-    internal class MainCharacter : IMovable
+    internal class MainCharacter : GameObject, IMovable
     {
         public int ManaPoints { get; set; }
 
         public int Experience { get; set; }
+
+        public MainCharacter(MatrixCoords coords)
+            :base(coords)
+        {
+
+        }
 
         public int DirectionX
         {
