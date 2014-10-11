@@ -2,6 +2,7 @@
 {
     public interface IMovable
     {
+       
         int Health { get; set; }
         int Level { get; set; }
 

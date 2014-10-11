@@ -4,6 +4,7 @@
 
     internal class NPC : IMovable
     {
+        
         public int DirectionX
         {
             get

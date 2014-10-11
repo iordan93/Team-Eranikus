@@ -10,11 +10,13 @@ namespace WorldOfASCIITanks.GameObject.World
 {
     class ConsoleRenderer : IRenderer
     {
+        // Everything is done at this class
         private char[,] world;
 
         public ConsoleRenderer(int rows, int cols)
         {
             world = new char[rows, cols];
+            this.ClearQueque();
         }
 
         public void EnqueForRendering(GameObject obj)

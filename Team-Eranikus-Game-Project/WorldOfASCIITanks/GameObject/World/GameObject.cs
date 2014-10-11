@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WorldOfASCIITanks.GameObject.World.Rendering;
+using WorldOfASCIITanks.Interfaces;
 
 namespace WorldOfASCIITanks.GameObject.World
 {
-    abstract class GameObject
+    abstract class GameObject : IRenderable
     {
-        protected MatrixCoords topLeft;
-        protected char[,] body;
+        protected MatrixCoords topLeft; // X and Y coordinates of the object
+        protected char[,] body; // Image of the object, example * or could be more than 1 symbol. It is used for the class ConsoleRenderer
         
         public GameObject(MatrixCoords coords, char[,] body)
         {

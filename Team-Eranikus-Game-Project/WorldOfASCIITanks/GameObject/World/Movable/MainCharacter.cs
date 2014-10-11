@@ -12,7 +12,7 @@ namespace WorldOfASCIITanks.GameObject.World.Movable
         public int Experience { get; set; }
 
         public MainCharacter(MatrixCoords coords)
-            :base(coords, new char[,] { {'*'} })
+            :base(coords, new char[,] { {'*'} }) // For the beginning '*' could be the symbol of the MainCharacter
         {
 
         }
