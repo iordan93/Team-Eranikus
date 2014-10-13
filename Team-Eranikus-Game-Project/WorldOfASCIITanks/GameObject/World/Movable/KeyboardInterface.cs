@@ -25,19 +25,19 @@ namespace WorldOfASCIITanks.GameOBject.World.Movable
             {
                 ConsoleKeyInfo key = Console.ReadKey();
 
-                if (key.Key == ConsoleKey.A)
+                if (key.Key == ConsoleKey.A || key.Key == ConsoleKey.LeftArrow)
                 {
                     this.OnLeftPressed(this, new EventArgs());
                 }
-                if (key.Key == ConsoleKey.D)
+                if (key.Key == ConsoleKey.D || key.Key == ConsoleKey.RightArrow)
                 {
                     this.OnRightPressed(this, new EventArgs());
                 }
-                if (key.Key == ConsoleKey.W)
+                if (key.Key == ConsoleKey.W || key.Key == ConsoleKey.UpArrow)
                 {
                     this.OnUpPressed(this, new EventArgs());
                 }
-                if (key.Key == ConsoleKey.S)
+                if (key.Key == ConsoleKey.S || key.Key == ConsoleKey.DownArrow)
                 {
                     this.OnDownPressed(this, new EventArgs());
                 }
