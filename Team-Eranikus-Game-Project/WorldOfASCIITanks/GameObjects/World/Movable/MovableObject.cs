@@ -3,87 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WorldOfASCIITanks.GameEngine;
 using WorldOfASCIITanks.Interfaces;
+using WorldOfASCIITanks.Rendering;
 
 namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
-    public class MovableObject : WorldObject, IMovable, IAttackable
+    public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttackable
     {
-        public int Health
+        public MovableObject(MatrixCoords coords, char[,] body, int health, int level, int attack, int defence, int experience)
+            : base(coords, body)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+            this.Health = health;
+            this.Level = level;
+            this.AttackPoints = attack;
+            this.DefencePoints = defence;
+            this.Experience = experience;
         }
 
-        public int Level
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public int Health { get; set; }
 
-        public int Attack
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public int Level { get; set; }
 
-        public int Defence
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public int AttackPoints { get; set; }
 
-        public int DirectionX
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public int DefencePoints { get; set; }
 
-        public int DirectionY
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public int Experience { get; set; }
 
-        public void Move()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void Move(Direction direction, int step = 1);
+
+        public abstract void Attack();
     }
 }

@@ -9,14 +9,14 @@ using WorldOfASCIITanks.Interfaces;
 
 namespace WorldOfASCIITanks.Rendering
 {
-    class ConsoleRenderer : IRenderer
+    public class ConsoleRenderer : IRenderer
     {
         // Everything is done at this class
         private char[,] world;
 
-        public ConsoleRenderer(int rows, int cols)
+        public ConsoleRenderer(int width, int height)
         {
-            world = new char[rows, cols];
+            this.world = new char[width, height];
             this.ClearQueque();
         }
 
@@ -24,9 +24,9 @@ namespace WorldOfASCIITanks.Rendering
         {
             char[,] image = obj.GetImage();
 
-            MatrixCoords topLeft = obj.TopLeft;
-            int rows = image.GetLength(0) + obj.TopLeft.Row;
-            int cols = image.GetLength(1) + obj.TopLeft.Col;
+            MatrixCoords topLeft = obj.Coords;
+            int rows = image.GetLength(0) + obj.Coords.Row;
+            int cols = image.GetLength(1) + obj.Coords.Col;
 
             for (int row = topLeft.Row, imageRow = 0; row < rows; row++, imageRow++)
             {
@@ -41,14 +41,16 @@ namespace WorldOfASCIITanks.Rendering
         {
             Console.SetCursorPosition(0, 0);
             StringBuilder output = new StringBuilder();
-            for (int row = 0; row < this.world.GetLength(0); row++)
+            for (int row = 0; row < ConsoleSettings.ConsoleWidth; row++)
             {
-                for (int col = 0; col < this.world.GetLength(1); col++)
+                for (int col = 0; col < ConsoleSettings.ConsoleHeight; col++)
                 {
                     output.Append(this.world[row, col]);
                 }
-                output.AppendLine();
+                if (row != ConsoleSettings.ConsoleHeight - 1)
+                    output.AppendLine();
             }
+
             Console.Write(output);
         }
 

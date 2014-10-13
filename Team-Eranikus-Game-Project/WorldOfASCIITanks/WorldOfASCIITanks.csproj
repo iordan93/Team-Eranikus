@@ -60,9 +60,12 @@
     <Compile Include="GameObjects\World\Map\Map.cs" />
     <Compile Include="GameObjects\World\Map\Wall.cs" />
     <Compile Include="GameEngine\KeyboardInterface.cs" />
+    <Compile Include="GameEngine\Direction.cs" />
     <Compile Include="GameObjects\World\Movable\MainCharacter.cs" />
     <Compile Include="GameObjects\World\Movable\MovableObject.cs" />
     <Compile Include="GameObjects\World\Movable\NPC.cs" />
+    <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="Rendering\ConsoleSettings.cs" />
     <Compile Include="Rendering\MatrixCoords.cs" />
     <Compile Include="Rendering\ConsoleRenderer.cs" />
     <Compile Include="GameObjects\World\WorldObject.cs" />

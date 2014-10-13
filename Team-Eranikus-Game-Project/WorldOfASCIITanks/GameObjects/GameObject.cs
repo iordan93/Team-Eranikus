@@ -10,23 +10,39 @@ namespace WorldOfASCIITanks.GameObjects
 {
     public abstract class GameObject : IRenderable
     {
-        protected MatrixCoords topLeft; // X and Y coordinates of the object
+        protected MatrixCoords coords; // X and Y coordinates of the object
         protected char[,] body; // Image of the object, example * or could be more than 1 symbol. It is used for the class ConsoleRenderer
         
         public GameObject(MatrixCoords coords, char[,] body)
         {
-            this.TopLeft = coords;
+            this.Coords = coords;
             this.body = body;
         }
-        public MatrixCoords TopLeft
+        public MatrixCoords Coords
         {
             get
             {
-                return new MatrixCoords(topLeft.Row, topLeft.Col);
+                return new MatrixCoords(coords.Row, coords.Col);
             }
             protected set
             {
-                this.topLeft = new MatrixCoords(value.Row, value.Col);
+                this.coords = new MatrixCoords(value.Row, value.Col);
+            }
+        }
+
+        public int Width
+        {
+            get
+            {
+                return this.body.GetLength(0);
+            }
+        }
+
+        public int Height
+        {
+            get
+            {
+                return this.body.GetLength(1);
             }
         }
 

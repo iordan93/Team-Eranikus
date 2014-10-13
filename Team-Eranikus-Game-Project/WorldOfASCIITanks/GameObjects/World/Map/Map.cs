@@ -8,5 +8,9 @@ namespace WorldOfASCIITanks.GameObjects.World.Map
 {
     public class Map : WorldObject
     {
+        public Map():base(null, null)
+        {
+            // TODO: Implement constructor properly
+        }
     }
 }

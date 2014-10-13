@@ -1,19 +1,8 @@
-﻿namespace WorldOfASCIITanks.Interfaces
+﻿using WorldOfASCIITanks.GameEngine;
+namespace WorldOfASCIITanks.Interfaces
 {
     public interface IMovable
     {
-       
-        int Health { get; set; }
-        int Level { get; set; }
-
-        int Attack { get; set; }
-
-        int Defence { get; set; }
-
-        int DirectionX { get; set; }
-
-        int DirectionY { get; set; }
-
-        void Move();
+        void Move(Direction direction, int step);
     }
 }
