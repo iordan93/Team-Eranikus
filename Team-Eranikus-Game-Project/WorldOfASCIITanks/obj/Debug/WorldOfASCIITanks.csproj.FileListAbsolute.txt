@@ -4,3 +4,9 @@ C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-E
 C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.pdb
 C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.exe
 C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.pdb
+D:\SoftUni\Object-Oriented Programming\Object-oriented Programming Teamwork\Team-Eranikus\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe.config
+D:\SoftUni\Object-Oriented Programming\Object-oriented Programming Teamwork\Team-Eranikus\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.exe
+D:\SoftUni\Object-Oriented Programming\Object-oriented Programming Teamwork\Team-Eranikus\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.pdb
+D:\SoftUni\Object-Oriented Programming\Object-oriented Programming Teamwork\Team-Eranikus\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe
+D:\SoftUni\Object-Oriented Programming\Object-oriented Programming Teamwork\Team-Eranikus\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.pdb
+D:\SoftUni\Object-Oriented Programming\Object-oriented Programming Teamwork\Team-Eranikus\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csprojResolveAssemblyReference.cache

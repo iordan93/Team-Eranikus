@@ -42,16 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameEngine\GameEngine.cs" />
-    <Compile Include="GameOBject\World\GameObject.cs" />
-    <Compile Include="GameOBject\World\Items\Potions.cs" />
-    <Compile Include="GameOBject\World\Items\Spell.cs" />
-    <Compile Include="GameOBject\World\Items\Weapons.cs" />
-    <Compile Include="GameOBject\World\Map\Wall.cs" />
-    <Compile Include="GameOBject\World\Movable\KeyboardInterface.cs" />
-    <Compile Include="GameOBject\World\Movable\MainCharacter.cs" />
-    <Compile Include="GameOBject\World\Movable\NPC.cs" />
-    <Compile Include="GameOBject\World\Rendering\MatrixCoords.cs" />
-    <Compile Include="GameOBject\World\Rendering\ConsoleRenderer.cs" />
+    <Compile Include="GameObjects\World\GameObject.cs" />
+    <Compile Include="GameObjects\World\Items\Potions.cs" />
+    <Compile Include="GameObjects\World\Items\Spell.cs" />
+    <Compile Include="GameObjects\World\Items\Weapons.cs" />
+    <Compile Include="GameObjects\World\Map\Wall.cs" />
+    <Compile Include="GameObjects\World\Movable\KeyboardInterface.cs" />
+    <Compile Include="GameObjects\World\Movable\MainCharacter.cs" />
+    <Compile Include="GameObjects\World\Movable\NPC.cs" />
+    <Compile Include="GameObjects\World\Rendering\MatrixCoords.cs" />
+    <Compile Include="GameObjects\World\Rendering\ConsoleRenderer.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\ICollectible.cs" />
     <Compile Include="Interfaces\ICollidable.cs" />
@@ -67,7 +67,7 @@
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GameOBject\Menu\" />
+    <Folder Include="GameObjects\Menu\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

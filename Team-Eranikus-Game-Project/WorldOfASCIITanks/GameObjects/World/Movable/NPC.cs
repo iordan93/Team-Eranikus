@@ -1,4 +1,4 @@
-﻿namespace WorldOfASCIITanks.GameObject.World.Movable
+﻿namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     using WorldOfASCIITanks.Interfaces;
 

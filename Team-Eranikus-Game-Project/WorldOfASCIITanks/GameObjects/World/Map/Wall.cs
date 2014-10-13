@@ -1,6 +1,6 @@
 ﻿using WorldOfASCIITanks.Interfaces;
 
-namespace WorldOfASCIITanks.GameObject.World.Map
+namespace WorldOfASCIITanks.GameObjects.World.Map
 {
     internal class Wall : ICollidable
     {

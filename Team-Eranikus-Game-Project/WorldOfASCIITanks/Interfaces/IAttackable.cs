@@ -1,4 +1,4 @@
-﻿using WorldOfASCIITanks.GameObject.World;
+﻿using WorldOfASCIITanks.GameObjects.World;
 
 namespace WorldOfASCIITanks.Interfaces
 {
