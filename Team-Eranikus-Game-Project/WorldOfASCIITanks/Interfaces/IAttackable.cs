@@ -2,7 +2,7 @@
 
 namespace WorldOfASCIITanks.Interfaces
 {
-    internal interface IAttackable
+    public interface IAttackable
     {
     }
 }

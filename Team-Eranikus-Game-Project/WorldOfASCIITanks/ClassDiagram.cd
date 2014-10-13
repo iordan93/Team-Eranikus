@@ -1,83 +1,241 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="WorldOfASCIITanks.GameObject.World.Items.Potions" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+  <Class Name="WorldOfASCIITanks.GameEngine.GameEngine" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameObject\World\Items\Potions.cs</FileName>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>GameEngine\GameEngine.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WorldOfASCIITanks.GameObject.World.Items.Spell" Collapsed="true">
-    <Position X="4" Y="1.5" Width="1.5" />
+  <Class Name="WorldOfASCIITanks.GameObjects.GameObject" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameObject\World\Items\Spell.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="WorldOfASCIITanks.GameObject.World.Items.Weapons" Collapsed="true">
-    <Position X="2.25" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameObject\World\Items\Weapons.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="WorldOfASCIITanks.GameObject.World.Map.Wall" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameObject\World\Map\Wall.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="WorldOfASCIITanks.GameObject.World.Movable.MainCharacter" Collapsed="true">
-    <Position X="2.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameObject\World\Movable\MainCharacter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAQAQAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="WorldOfASCIITanks.GameObject.World.Movable.NPC" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+  <Class Name="WorldOfASCIITanks.GameObjects.Menu.MenuObject" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameObject\World\Movable\NPC.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Menu\MenuObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.CollectableObject" Collapsed="true">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\CollectableObject.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.NegativeCollectableObject" Collapsed="true">
+    <Position X="15" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\NegativeCollectableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.PositiveCollectableObject" Collapsed="true">
+    <Position X="17.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\PositiveCollectableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Potion" Collapsed="true">
+    <Position X="14.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Potion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Health" Collapsed="true">
+    <Position X="14" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Potions\Health.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Mana" Collapsed="true">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Potions\Mana..cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Fireball" Collapsed="true">
+    <Position X="18.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Spells\Fireball.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Frostbolt" Collapsed="true">
+    <Position X="20.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Spells\Frostbolt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Heal" Collapsed="true">
+    <Position X="23" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Spells\Heal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.MagicShield" Collapsed="true">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Spells\MagicShield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Rage" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Spells\Rage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Spell" Collapsed="true">
+    <Position X="18.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Spells\Spell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Items.Weapon" Collapsed="true">
+    <Position X="20.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Items\Weapons\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Map.Map" Collapsed="true">
+    <Position X="19.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Map\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Map.Wall" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Map\Wall.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameOBjects.World.Movable.KeyboardInterface" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAEAAEAAAAAAgAAAAAAAAAAAACAA=</HashCode>
+      <FileName>GameEngine\KeyboardInterface.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Movable.MainCharacter" Collapsed="true">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>GameObjects\World\Movable\MainCharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Movable.MovableObject" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAIAAAAAAAAAAAAAAAIAAGAABAAAAAgAAAAA=</HashCode>
+      <FileName>GameObjects\World\Movable\MovableObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.Movable.NPC" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\Movable\NPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldOfASCIITanks.Rendering.ConsoleRenderer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAQAABAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rendering\ConsoleRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WorldOfASCIITanks.GameObjects.World.WorldObject" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\World\WorldObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WorldOfASCIITanks.Rendering.MatrixCoords" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAEAAAAAAAEAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rendering\MatrixCoords.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Class Name="WorldOfASCIITanks.Program" Collapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+    <Position X="23.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="WorldOfASCIITanks.Interfaces.IAttackable" Collapsed="true">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Position X="21.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IAttackable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="WorldOfASCIITanks.Interfaces.ICollectible" Collapsed="true">
-    <Position X="2.25" Y="3.75" Width="1.5" />
+  <Interface Name="WorldOfASCIITanks.Interfaces.ICollectable" Collapsed="true">
+    <Position X="23.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\ICollectible.cs</FileName>
+      <FileName>Interfaces\ICollectable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="WorldOfASCIITanks.Interfaces.ICollidable" Collapsed="true">
-    <Position X="4" Y="3.75" Width="1.5" />
+    <Position X="25.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ICollidable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="WorldOfASCIITanks.Interfaces.IRenderable" Collapsed="true">
-    <Position X="0.5" Y="4.5" Width="1.5" />
+  <Interface Name="WorldOfASCIITanks.Interfaces.IMovable" Collapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAAAIAAAAAAAAAAAAAAAIAAGAABAAAAAgAAAAA=</HashCode>
+      <FileName>Interfaces\IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WorldOfASCIITanks.Interfaces.IRenderable" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WorldOfASCIITanks.Interfaces.IRenderer" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAABAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WorldOfASCIITanks.Interfaces.IUserInterface" Collapsed="true">
+    <Position X="21.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAEAAEAAAAAAgAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Interfaces\IUserinterface.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

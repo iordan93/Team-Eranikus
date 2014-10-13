@@ -1,6 +1,7 @@
 ﻿namespace WorldOfASCIITanks.GameObjects.World.Items
 {
-    internal class Potions
+    public class Weapon : PositiveCollectableObject
     {
+
     }
 }

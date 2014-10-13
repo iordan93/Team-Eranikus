@@ -42,18 +42,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameEngine\GameEngine.cs" />
-    <Compile Include="GameObjects\World\GameObject.cs" />
-    <Compile Include="GameObjects\World\Items\Potions.cs" />
-    <Compile Include="GameObjects\World\Items\Spell.cs" />
-    <Compile Include="GameObjects\World\Items\Weapons.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\Menu\MenuObject.cs" />
+    <Compile Include="GameObjects\World\Items\CollectableObject.cs" />
+    <Compile Include="GameObjects\World\Items\Spells\Fireball.cs" />
+    <Compile Include="GameObjects\World\Items\Spells\Frostbolt.cs" />
+    <Compile Include="GameObjects\World\Items\Spells\Heal.cs" />
+    <Compile Include="GameObjects\World\Items\Potions\Health.cs" />
+    <Compile Include="GameObjects\World\Items\Spells\MagicShield.cs" />
+    <Compile Include="GameObjects\World\Items\Potions\Mana..cs" />
+    <Compile Include="GameObjects\World\Items\NegativeCollectableObject.cs" />
+    <Compile Include="GameObjects\World\Items\PositiveCollectableObject.cs" />
+    <Compile Include="GameObjects\World\Items\Potion.cs" />
+    <Compile Include="GameObjects\World\Items\Spells\Rage.cs" />
+    <Compile Include="GameObjects\World\Items\Spells\Spell.cs" />
+    <Compile Include="GameObjects\World\Items\Weapons\Weapon.cs" />
+    <Compile Include="GameObjects\World\Map\Map.cs" />
     <Compile Include="GameObjects\World\Map\Wall.cs" />
-    <Compile Include="GameObjects\World\Movable\KeyboardInterface.cs" />
+    <Compile Include="GameEngine\KeyboardInterface.cs" />
     <Compile Include="GameObjects\World\Movable\MainCharacter.cs" />
+    <Compile Include="GameObjects\World\Movable\MovableObject.cs" />
     <Compile Include="GameObjects\World\Movable\NPC.cs" />
-    <Compile Include="GameObjects\World\Rendering\MatrixCoords.cs" />
-    <Compile Include="GameObjects\World\Rendering\ConsoleRenderer.cs" />
+    <Compile Include="Rendering\MatrixCoords.cs" />
+    <Compile Include="Rendering\ConsoleRenderer.cs" />
+    <Compile Include="GameObjects\World\WorldObject.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
-    <Compile Include="Interfaces\ICollectible.cs" />
+    <Compile Include="Interfaces\ICollectable.cs" />
     <Compile Include="Interfaces\ICollidable.cs" />
     <Compile Include="Interfaces\IMovable.cs" />
     <Compile Include="Interfaces\IRenderable.cs" />
@@ -66,9 +80,7 @@
     <None Include="App.config" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GameObjects\Menu\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

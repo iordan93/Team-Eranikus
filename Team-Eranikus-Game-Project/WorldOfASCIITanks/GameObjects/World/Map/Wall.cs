@@ -2,7 +2,7 @@
 
 namespace WorldOfASCIITanks.GameObjects.World.Map
 {
-    internal class Wall : ICollidable
+    public class Wall : Map, ICollidable
     {
     }
 }

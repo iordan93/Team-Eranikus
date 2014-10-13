@@ -1,6 +1,6 @@
 ﻿namespace WorldOfASCIITanks.Interfaces
 {
-    internal interface ICollidable
+    public interface ICollidable
     {
     }
 }

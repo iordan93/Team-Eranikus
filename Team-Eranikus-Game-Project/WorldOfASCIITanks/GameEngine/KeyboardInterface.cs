@@ -7,7 +7,7 @@ using WorldOfASCIITanks.Interfaces;
 
 namespace WorldOfASCIITanks.GameOBjects.World.Movable
 {
-    class KeyboardInterface : IUserinterface
+    class KeyboardInterface : IUserInterface
     {
 
         public event EventHandler OnLeftPressed;

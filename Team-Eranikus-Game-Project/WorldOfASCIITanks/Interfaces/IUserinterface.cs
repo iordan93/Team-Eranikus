@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WorldOfASCIITanks.Interfaces
 {
-    interface IUserinterface
+    interface IUserInterface
     {
         event EventHandler OnLeftPressed;
 

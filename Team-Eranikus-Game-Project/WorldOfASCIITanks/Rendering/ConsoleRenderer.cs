@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WorldOfASCIITanks.GameObjects.World.Rendering;
+using WorldOfASCIITanks.GameObjects;
+using WorldOfASCIITanks.Rendering;
 using WorldOfASCIITanks.Interfaces;
 
-namespace WorldOfASCIITanks.GameObjects.World
+namespace WorldOfASCIITanks.Rendering
 {
     class ConsoleRenderer : IRenderer
     {

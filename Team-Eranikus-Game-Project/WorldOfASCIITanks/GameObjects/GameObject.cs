@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WorldOfASCIITanks.GameObjects.World.Rendering;
+using WorldOfASCIITanks.Rendering;
 using WorldOfASCIITanks.Interfaces;
 
-namespace WorldOfASCIITanks.GameObjects.World
+namespace WorldOfASCIITanks.GameObjects
 {
-    abstract class GameObject : IRenderable
+    public abstract class GameObject : IRenderable
     {
         protected MatrixCoords topLeft; // X and Y coordinates of the object
         protected char[,] body; // Image of the object, example * or could be more than 1 symbol. It is used for the class ConsoleRenderer

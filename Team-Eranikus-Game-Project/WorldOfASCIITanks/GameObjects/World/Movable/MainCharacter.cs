@@ -1,98 +1,17 @@
-﻿
-
-namespace WorldOfASCIITanks.GameObjects.World.Movable
+﻿namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
-    using WorldOfASCIITanks.GameObjects.World.Rendering;
+    using WorldOfASCIITanks.Rendering;
     using WorldOfASCIITanks.Interfaces;
 
-    internal class MainCharacter : GameObject, IMovable
+    public class MainCharacter : MovableObject
     {
         public int ManaPoints { get; set; }
 
         public int Experience { get; set; }
 
-        public MainCharacter(MatrixCoords coords)
-            :base(coords, new char[,] { {'*'} }) // For the beginning '*' could be the symbol of the MainCharacter
-        {
-
-        }
-
-        public int DirectionX
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
-        public int DirectionY
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
-        public void Move()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public int Health
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
-        public int Attack
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
-        public int Defence
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
-
-        public int Level
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
-        }
+        //public MainCharacter(MatrixCoords coords)
+        //    :base(coords, new char[,] { {'*'} }) // For the beginning '*' could be the symbol of the MainCharacter
+        //{
+        //}
     }
 }

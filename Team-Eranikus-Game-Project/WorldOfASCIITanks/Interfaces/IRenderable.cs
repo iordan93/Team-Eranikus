@@ -1,6 +1,6 @@
 ﻿namespace WorldOfASCIITanks.Interfaces
 {
-    internal interface IRenderable
+    public interface IRenderable
     {
         char[,] GetImage();
     }
