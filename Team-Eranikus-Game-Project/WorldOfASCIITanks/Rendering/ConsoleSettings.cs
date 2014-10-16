@@ -8,14 +8,14 @@ namespace WorldOfASCIITanks.Rendering
 {
     public static class ConsoleSettings
     {
-        public const int ConsoleWidth = 60;
-        public const int ConsoleHeight = 40;
+        public const int ConsoleWidth = 50;
+        public const int ConsoleHeight = 24;
 
         public static void PrepareConsole() 
         {
             // TODO: CursorVisible, colors, etc.
-            Console.BufferWidth = Console.WindowWidth = ConsoleHeight;
-            Console.BufferHeight = Console.WindowHeight = ConsoleWidth;
+            Console.BufferWidth = Console.WindowWidth = ConsoleWidth;
+            Console.BufferHeight = Console.WindowHeight = ConsoleHeight + 1;
             Console.CursorVisible = false;
         }
     }

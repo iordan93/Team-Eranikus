@@ -14,9 +14,9 @@ namespace WorldOfASCIITanks.Rendering
         // Everything is done at this class
         private char[,] world;
 
-        public ConsoleRenderer(int width, int height)
+        public ConsoleRenderer(int rows, int cols)
         {
-            this.world = new char[width, height];
+            this.world = new char[rows, cols];
             this.ClearQueque();
         }
 
@@ -41,14 +41,18 @@ namespace WorldOfASCIITanks.Rendering
         {
             Console.SetCursorPosition(0, 0);
             StringBuilder output = new StringBuilder();
-            for (int row = 0; row < ConsoleSettings.ConsoleWidth; row++)
+            for (int row = 0; row < this.world.GetLength(0); row++)
             {
-                for (int col = 0; col < ConsoleSettings.ConsoleHeight; col++)
+                for (int col = 0; col < this.world.GetLength(1); col++)
                 {
+                    char symbol = this.world[row, col];
+                    //Console.SetCursorPosition(col, row);
+                    //Console.Write(symbol);
                     output.Append(this.world[row, col]);
                 }
-                if (row != ConsoleSettings.ConsoleHeight - 1)
-                    output.AppendLine();
+                //output.AppendLine();
+                //Console.Write(output);
+                //output.Clear();
             }
 
             Console.Write(output);

@@ -24,6 +24,10 @@ namespace WorldOfASCIITanks.GameOBjects.World.Movable
             if (Console.KeyAvailable)
             {
                 ConsoleKeyInfo key = Console.ReadKey();
+                while (Console.KeyAvailable)
+                {
+                    Console.ReadKey(true);
+                }
 
                 if (key.Key == ConsoleKey.A || key.Key == ConsoleKey.LeftArrow)
                 {

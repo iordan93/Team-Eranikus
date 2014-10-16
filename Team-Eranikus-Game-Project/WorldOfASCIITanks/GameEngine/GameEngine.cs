@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WorldOfASCIITanks.GameObjects;
 using WorldOfASCIITanks.Interfaces;
+using System.Threading;
 
 namespace WorldOfASCIITanks.GameEngine
 {
@@ -21,5 +22,28 @@ namespace WorldOfASCIITanks.GameEngine
             this.allObjects = new List<GameObject>();
         }
 
+        public void AddObject(GameObject obj)
+        {
+            this.allObjects.Add(obj);
+        }
+        public void Run()
+        {
+            while (true)
+            {
+                this.renderer.RenderAll();
+
+                Thread.Sleep(150);
+
+                this.userInterface.ProcessInput();
+
+                this.renderer.ClearQueque();
+
+                foreach (var obj in allObjects)
+                {
+                    obj.Update();
+                    this.renderer.EnqueueForRendering(obj);
+                }
+            }
+        }
     }
 }

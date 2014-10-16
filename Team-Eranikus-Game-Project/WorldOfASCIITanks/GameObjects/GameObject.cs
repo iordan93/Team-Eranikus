@@ -8,8 +8,9 @@ using WorldOfASCIITanks.Interfaces;
 
 namespace WorldOfASCIITanks.GameObjects
 {
-    public abstract class GameObject : IRenderable
+    public abstract class GameObject : IRenderable, ICollidable
     {
+        public abstract int Team { get; protected set; }
         protected MatrixCoords coords; // X and Y coordinates of the object
         protected char[,] body; // Image of the object, example * or could be more than 1 symbol. It is used for the class ConsoleRenderer
         
@@ -22,7 +23,7 @@ namespace WorldOfASCIITanks.GameObjects
         {
             get
             {
-                return new MatrixCoords(coords.Row, coords.Col);
+                return this.coords;
             }
             protected set
             {
@@ -60,5 +61,12 @@ namespace WorldOfASCIITanks.GameObjects
 
             return copy;
         }
+
+        public virtual bool CanCollideWith(GameObject otherObject)
+        {
+            throw new NotImplementedException();
+        }
+
+        public abstract void Update();
     }
 }
