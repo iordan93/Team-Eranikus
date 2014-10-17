@@ -21,10 +21,6 @@ using WorldOfASCIITanks.Rendering;
             throw new System.NotImplementedException();
         }
 
-        public override bool CanCollideWith(GameObject otherObject)
-        {
-            return this.Team != otherObject.Team;
-        }
 
 
         private void AiOfNPC()

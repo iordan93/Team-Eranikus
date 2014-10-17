@@ -21,10 +21,6 @@
         {
             throw new System.NotImplementedException();
         }
-        public override bool CanCollideWith(GameObject otherObject)
-        {
-            return this.Team != otherObject.Team;
-        }
 
         public override void Update()
         {

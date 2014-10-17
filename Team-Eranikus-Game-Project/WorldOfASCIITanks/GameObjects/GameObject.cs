@@ -10,14 +10,16 @@ namespace WorldOfASCIITanks.GameObjects
 {
     public abstract class GameObject : IRenderable, ICollidable
     {
-        public abstract int Team { get; protected set; }
+        public abstract int Team { get; protected set; } // used for collision
         protected MatrixCoords coords; // X and Y coordinates of the object
         protected char[,] body; // Image of the object, example * or could be more than 1 symbol. It is used for the class ConsoleRenderer
+        public bool isAlive { get; set; }
         
         public GameObject(MatrixCoords coords, char[,] body)
         {
             this.Coords = coords;
             this.body = body;
+            this.isAlive = true;
         }
         public MatrixCoords Coords
         {
@@ -64,7 +66,16 @@ namespace WorldOfASCIITanks.GameObjects
 
         public virtual bool CanCollideWith(GameObject otherObject)
         {
-            throw new NotImplementedException();
+
+            if (this.Coords.Row == otherObject.Coords.Row && this.Coords.Col == otherObject.Coords.Col)
+            {
+                return this.Team != otherObject.Team;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
         public abstract void Update();

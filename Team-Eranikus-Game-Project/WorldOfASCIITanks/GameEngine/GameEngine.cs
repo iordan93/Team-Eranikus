@@ -38,6 +38,8 @@ namespace WorldOfASCIITanks.GameEngine
 
                 this.renderer.ClearQueque();
 
+                CollisionDispatcher.SeeForCollisions(this.allObjects);
+
                 foreach (var obj in allObjects)
                 {
                     obj.Update();

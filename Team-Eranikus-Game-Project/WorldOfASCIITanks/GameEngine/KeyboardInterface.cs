@@ -24,7 +24,7 @@ namespace WorldOfASCIITanks.GameOBjects.World.Movable
             if (Console.KeyAvailable)
             {
                 ConsoleKeyInfo key = Console.ReadKey();
-                while (Console.KeyAvailable)
+                while (Console.KeyAvailable) // for improved character move, not lagging and atc.
                 {
                     Console.ReadKey(true);
                 }
