@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using WorldOfASCIITanks.GameObjects;
 using WorldOfASCIITanks.Rendering;
 using WorldOfASCIITanks.Interfaces;
+using WorldOfASCIITanks;
 
 namespace WorldOfASCIITanks.Rendering
 {

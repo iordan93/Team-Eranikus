@@ -58,6 +58,9 @@
     <Compile Include="GameObjects\World\Items\Potion.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Rage.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Spell.cs" />
+    <Compile Include="GameObjects\World\Items\Weapons\BattleAxe.cs" />
+    <Compile Include="GameObjects\World\Items\Weapons\Knife.cs" />
+    <Compile Include="GameObjects\World\Items\Weapons\MagicStaff.cs" />
     <Compile Include="GameObjects\World\Items\Weapons\Weapon.cs" />
     <Compile Include="GameObjects\World\Map\Map.cs" />
     <Compile Include="GameObjects\World\Map\Wall.cs" />
