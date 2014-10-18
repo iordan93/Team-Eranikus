@@ -3,16 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using WorldOfASCIITanks.GameEngine;
 using WorldOfASCIITanks.Interfaces;
 using WorldOfASCIITanks.Rendering;
+using WorldOfASCIITanks.Constants;
 
 namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttackable
     {
-        public MovableObject(MatrixCoords coords, char[,] body,
-            int health, int manaPoints, int attack, int defence, int experience, int level)
+        private int health;
+
+        private int manaPoints;
+
+        private int attack;
+
+        private int defence;
+
+        private int experience;
+
+        private int level;
+
+        public MovableObject(
+            MatrixCoords coords,
+            char[,] body,
+            int health,
+            int manaPoints,
+            int attack,
+            int defence,
+            int experience,
+            int level)
             : base(coords, body)
         {
             this.Health = health;
@@ -23,17 +44,83 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Level = level;
         }
 
-        public int Health { get; set; }
+        public int Health
+        {
+            get
+            {
+                return this.health;
+            }
 
-        public int Level { get; set; }
+            set
+            {
+                this.health = CharacterConstants.HEALTH;
+            }
+        }
 
-        public int AttackPoints { get; set; }
+        public int ManaPoints
+        {
+            get
+            {
+                return this.manaPoints;
+            }
 
-        public int DefencePoints { get; set; }
+            set
+            {
+                this.manaPoints = CharacterConstants.MANAPOINTS;
+            }
+        }
 
-        public int Experience { get; set; }
+        public int AttackPoints
+        {
+            get
+            {
+                return this.attack;
+            }
 
-        public int ManaPoints { get; set; }
+            set
+            {
+                this.attack = CharacterConstants.ATTACKPOINTS;
+            }
+        }
+
+        public int DefencePoints
+        {
+            get
+            {
+                return this.defence;
+            }
+
+            set
+            {
+                this.defence = CharacterConstants.DEFENCEPOINTS;
+            }
+        }
+
+        public int Experience
+        {
+            get
+            {
+                return this.experience;
+            }
+
+            set
+            {
+                this.experience = CharacterConstants.EXPERIENCE;
+            }
+        }
+
+        public int Level
+        {
+            get
+            {
+                return this.level;
+            }
+
+            set
+            {
+                this.level = CharacterConstants.LEVEL;
+            }
+        }
 
         public virtual void Move(Direction direction, int step = 1)
         {
