@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\CharacterConstants.cs" />
     <Compile Include="GameEngine\CollisionDispatcher.cs" />
     <Compile Include="GameEngine\GameEngine.cs" />
     <Compile Include="GameObjects\GameObject.cs" />

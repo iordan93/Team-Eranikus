@@ -15,7 +15,7 @@ namespace WorldOfASCIITanks
             ConsoleSettings.PrepareConsole();
 
             char[,] heroBody = new char[1, 1] { { '*' } };
-            MainCharacter hero = new MainCharacter(new MatrixCoords(1,1), heroBody, 10);
+            MainCharacter hero = new MainCharacter(new MatrixCoords(1,1), heroBody);
             KeyboardInterface keyboard = new KeyboardInterface();
             NPC enemy = new NPC(new MatrixCoords(3, 3), new char[,] { { '@' } });
             ConsoleRenderer renderer = new ConsoleRenderer(ConsoleSettings.ConsoleHeight, ConsoleSettings.ConsoleWidth);

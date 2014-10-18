@@ -11,14 +11,16 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttackable
     {
-        public MovableObject(MatrixCoords coords, char[,] body, int health, int level, int attack, int defence, int experience)
+        public MovableObject(MatrixCoords coords, char[,] body,
+            int health, int manaPoints, int attack, int defence, int experience, int level)
             : base(coords, body)
         {
             this.Health = health;
-            this.Level = level;
+            this.ManaPoints = manaPoints;
             this.AttackPoints = attack;
             this.DefencePoints = defence;
             this.Experience = experience;
+            this.Level = level;
         }
 
         public int Health { get; set; }
@@ -30,6 +32,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
         public int DefencePoints { get; set; }
 
         public int Experience { get; set; }
+
+        public int ManaPoints { get; set; }
 
         public virtual void Move(Direction direction, int step = 1)
         {
@@ -44,24 +48,28 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                         newRow -= step;
                     }
                     break;
+
                 case Direction.Right:
                     if (newCol + step < ConsoleSettings.ConsoleWidth)
                     {
                         newCol += step;
                     }
                     break;
+
                 case Direction.Down:
                     if (newRow + step < ConsoleSettings.ConsoleHeight)
                     {
                         newRow += step;
                     }
                     break;
+
                 case Direction.Left:
                     if (newCol - step >= 0)
                     {
                         newCol -= step;
                     }
                     break;
+
                 default:
                     throw new InvalidOperationException("Invalid direction provided.");
             }
@@ -74,7 +82,6 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 
         public override void Update()
         {
-            
         }
     }
 }

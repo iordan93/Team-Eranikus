@@ -8,14 +8,11 @@
     public class MainCharacter : MovableObject
     {
         public override int Team { get; protected set; }
-        public MainCharacter(MatrixCoords coords, char[,] body, int manaPoints)
-            : base(coords, body, 100, 1, 20, 20, 1)
+        public MainCharacter(MatrixCoords coords, char[,] body)
+            : base(coords, body, 100, 100, 100, 100, 100, 1)
         {
-            this.ManaPoints = manaPoints;
             this.Team = 1;
         }
-
-        public int ManaPoints { get; set; }
 
         public override void Attack()
         {

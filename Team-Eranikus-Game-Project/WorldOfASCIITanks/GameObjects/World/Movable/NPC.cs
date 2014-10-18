@@ -9,7 +9,7 @@ using WorldOfASCIITanks.Rendering;
         private string forArtificialInteligance = "right";
         public override int Team { get; protected set; }
         public NPC(MatrixCoords coords, char[,] body)
-            : base(coords, body, 100, 1, 2, 5, 1)
+            : base(coords, body, 100, 1, 2, 5, 10, 10)
         {
             // TODO: Implement constructor properly
             this.Team = 2;
