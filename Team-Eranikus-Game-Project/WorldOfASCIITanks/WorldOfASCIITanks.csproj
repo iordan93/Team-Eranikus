@@ -52,7 +52,7 @@
     <Compile Include="GameObjects\World\Items\Spells\Heal.cs" />
     <Compile Include="GameObjects\World\Items\Potions\Health.cs" />
     <Compile Include="GameObjects\World\Items\Spells\MagicShield.cs" />
-    <Compile Include="GameObjects\World\Items\Potions\Mana..cs" />
+    <Compile Include="GameObjects\World\Items\Potions\Mana.cs" />
     <Compile Include="GameObjects\World\Items\NegativeCollectableObject.cs" />
     <Compile Include="GameObjects\World\Items\PositiveCollectableObject.cs" />
     <Compile Include="GameObjects\World\Items\Potion.cs" />

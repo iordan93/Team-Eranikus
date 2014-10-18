@@ -25,3 +25,9 @@ F:\SoftUni\Level 2\OOP\TeamWork\Team-Eranikus\Team-Eranikus.git\trunk\Team-Erani
 F:\SoftUni\Level 2\OOP\TeamWork\Team-Eranikus\Team-Eranikus.git\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe
 F:\SoftUni\Level 2\OOP\TeamWork\Team-Eranikus\Team-Eranikus.git\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.pdb
 F:\SoftUni\Level 2\OOP\TeamWork\Team-Eranikus\Team-Eranikus.git\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csprojResolveAssemblyReference.cache
+D:\SoftUni\OOP\TeamProject\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe.config
+D:\SoftUni\OOP\TeamProject\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.exe
+D:\SoftUni\OOP\TeamProject\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.pdb
+D:\SoftUni\OOP\TeamProject\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe
+D:\SoftUni\OOP\TeamProject\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.pdb
+D:\SoftUni\OOP\TeamProject\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csprojResolveAssemblyReference.cache
