@@ -39,17 +39,17 @@
             this.btnUseWeapon = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cboWeapons = new System.Windows.Forms.ComboBox();
-            this.cboPoints = new System.Windows.Forms.ComboBox();
+            this.cboPotions = new System.Windows.Forms.ComboBox();
             this.btnUsePotion = new System.Windows.Forms.Button();
             this.btnNorth = new System.Windows.Forms.Button();
             this.btnEast = new System.Windows.Forms.Button();
             this.btnSouth = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnWest = new System.Windows.Forms.Button();
             this.rtbLocation = new System.Windows.Forms.RichTextBox();
-            this.rtbMessage = new System.Windows.Forms.RichTextBox();
-            this.dgvInvetory = new System.Windows.Forms.DataGridView();
+            this.rtbMessages = new System.Windows.Forms.RichTextBox();
+            this.dgvInventory = new System.Windows.Forms.DataGridView();
             this.dgvQuests = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInvetory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 20);
-            this.label1.Name = "label1";
+            this.label1.Name = "Hit Points";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hit Points:";
@@ -66,7 +66,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(18, 46);
-            this.label2.Name = "label2";
+            this.label2.Name = "Gold";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Gold:";
@@ -75,7 +75,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(18, 74);
-            this.label3.Name = "label3";
+            this.label3.Name = "Experience";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Experience:";
@@ -84,7 +84,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(18, 100);
-            this.label4.Name = "label4";
+            this.label4.Name = "Level";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Level:";
@@ -133,7 +133,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(617, 531);
-            this.label5.Name = "label5";
+            this.label5.Name = "Select action";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Select action";
@@ -149,12 +149,12 @@
             // 
             // cboPoints
             // 
-            this.cboPoints.FormattingEnabled = true;
-            this.cboPoints.Location = new System.Drawing.Point(369, 593);
-            this.cboPoints.Name = "cboPoints";
-            this.cboPoints.Size = new System.Drawing.Size(121, 21);
-            this.cboPoints.TabIndex = 10;
-            this.cboPoints.SelectedIndexChanged += new System.EventHandler(this.cboPoints_SelectedIndexChanged);
+            this.cboPotions.FormattingEnabled = true;
+            this.cboPotions.Location = new System.Drawing.Point(369, 593);
+            this.cboPotions.Name = "cboPoints";
+            this.cboPotions.Size = new System.Drawing.Size(121, 21);
+            this.cboPotions.TabIndex = 10;
+            this.cboPotions.SelectedIndexChanged += new System.EventHandler(this.cboPoints_SelectedIndexChanged);
             // 
             // btnUsePotion
             // 
@@ -190,11 +190,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(412, 457);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "West";
+            this.btnWest.Location = new System.Drawing.Point(412, 457);
+            this.btnWest.Name = "btnWest";
+            this.btnWest.Size = new System.Drawing.Size(75, 23);
+            this.btnWest.TabIndex = 15;
+            this.btnWest.Text = "West";
             // 
             // rtbLocation
             // 
@@ -207,26 +207,26 @@
             // 
             // rtbMessage
             // 
-            this.rtbMessage.Location = new System.Drawing.Point(347, 130);
-            this.rtbMessage.Name = "rtbMessage";
-            this.rtbMessage.ReadOnly = true;
-            this.rtbMessage.Size = new System.Drawing.Size(360, 286);
-            this.rtbMessage.TabIndex = 17;
-            this.rtbMessage.Text = "";
+            this.rtbMessages.Location = new System.Drawing.Point(347, 130);
+            this.rtbMessages.Name = "rtbMessage";
+            this.rtbMessages.ReadOnly = true;
+            this.rtbMessages.Size = new System.Drawing.Size(360, 286);
+            this.rtbMessages.TabIndex = 17;
+            this.rtbMessages.Text = "";
             // 
             // dgvInvetory
             // 
-            this.dgvInvetory.AllowUserToAddRows = false;
-            this.dgvInvetory.AllowUserToDeleteRows = false;
-            this.dgvInvetory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvInvetory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInvetory.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvInvetory.Location = new System.Drawing.Point(16, 130);
-            this.dgvInvetory.MultiSelect = false;
-            this.dgvInvetory.Name = "dgvInvetory";
-            this.dgvInvetory.ReadOnly = true;
-            this.dgvInvetory.Size = new System.Drawing.Size(312, 309);
-            this.dgvInvetory.TabIndex = 18;
+            this.dgvInventory.AllowUserToAddRows = false;
+            this.dgvInventory.AllowUserToDeleteRows = false;
+            this.dgvInventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventory.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvInventory.Location = new System.Drawing.Point(16, 130);
+            this.dgvInventory.MultiSelect = false;
+            this.dgvInventory.Name = "dgvInvetory";
+            this.dgvInventory.ReadOnly = true;
+            this.dgvInventory.Size = new System.Drawing.Size(312, 309);
+            this.dgvInventory.TabIndex = 18;
             // 
             // dgvQuests
             // 
@@ -250,15 +250,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 651);
             this.Controls.Add(this.dgvQuests);
-            this.Controls.Add(this.dgvInvetory);
-            this.Controls.Add(this.rtbMessage);
+            this.Controls.Add(this.dgvInventory);
+            this.Controls.Add(this.rtbMessages);
             this.Controls.Add(this.rtbLocation);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnWest);
             this.Controls.Add(this.btnSouth);
             this.Controls.Add(this.btnEast);
             this.Controls.Add(this.btnNorth);
             this.Controls.Add(this.btnUsePotion);
-            this.Controls.Add(this.cboPoints);
+            this.Controls.Add(this.cboPotions);
             this.Controls.Add(this.cboWeapons);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnUseWeapon);
@@ -272,8 +272,8 @@
             this.Controls.Add(this.label1);
             this.Location = new System.Drawing.Point(493, 555);
             this.Name = "SuperAdventure";
-            this.Text = "WorldOfAsciiTanks";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInvetory)).EndInit();
+            this.Text = "SuperAdventure";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -293,15 +293,15 @@
         private System.Windows.Forms.Button btnUseWeapon;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cboWeapons;
-        private System.Windows.Forms.ComboBox cboPoints;
+        private System.Windows.Forms.ComboBox cboPotions;
         private System.Windows.Forms.Button btnUsePotion;
         private System.Windows.Forms.Button btnNorth;
         private System.Windows.Forms.Button btnEast;
         private System.Windows.Forms.Button btnSouth;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnWest;
         private System.Windows.Forms.RichTextBox rtbLocation;
-        private System.Windows.Forms.RichTextBox rtbMessage;
-        private System.Windows.Forms.DataGridView dgvInvetory;
+        private System.Windows.Forms.RichTextBox rtbMessages;
+        private System.Windows.Forms.DataGridView dgvInventory;
         private System.Windows.Forms.DataGridView dgvQuests;
     }
 }

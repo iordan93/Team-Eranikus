@@ -9,3 +9,6 @@ C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Era
 C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
 C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.exe
 C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.exe
+C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.pdb
