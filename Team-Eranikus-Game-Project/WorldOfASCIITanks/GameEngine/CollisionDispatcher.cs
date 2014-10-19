@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WorldOfASCIITanks.GameObjects;
+using WorldOfASCIITanks.GameObjects.World.Map;
 
 namespace WorldOfASCIITanks.GameEngine
 {
@@ -27,6 +28,18 @@ namespace WorldOfASCIITanks.GameEngine
                     }
                 }
             }
+        }
+
+        public static bool SeeForCollisions(int nextRow, int nextCol, List<Wall> walls)
+        {
+            foreach (var item in walls)
+            {
+                if (nextRow == item.Coords.Row && nextCol == item.Coords.Col)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

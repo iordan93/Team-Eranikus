@@ -8,6 +8,7 @@ using WorldOfASCIITanks.Rendering;
 
 namespace WorldOfASCIITanks
 {
+    using System.Collections.Generic;
     using WorldOfASCIITanks.GameObjects.World.Items;
 
     public class Program
@@ -19,6 +20,7 @@ namespace WorldOfASCIITanks
             KeyboardInterface keyboard = new KeyboardInterface();
             NPC enemy = new NPC(new MatrixCoords(3, 3), new char[,] { { '@' } });
             ConsoleRenderer renderer = new ConsoleRenderer(ConsoleSettings.ConsoleHeight, ConsoleSettings.ConsoleWidth);
+            IList<WorldObject> map = MapParser.ParseMap("../../WorldMaps/map.txt");
             GameEngine.GameEngine gameEngine = new GameEngine.GameEngine(renderer, keyboard);
 
             Console.WriteLine("Please select your Hero: \nPress 1 for  Mage\nPress 2 for  Thief\nPress 3 for  Warrior");
@@ -28,6 +30,10 @@ namespace WorldOfASCIITanks
 
             gameEngine.AddObject(hero);
             gameEngine.AddObject(enemy);
+            foreach (var item in map)
+            {
+                gameEngine.AddObject(item);
+            }
 
             keyboard.OnDownPressed += (sender, eventInfo) => { hero.Move(Direction.Down); };
             keyboard.OnLeftPressed += (sender, eventInfo) => { hero.Move(Direction.Left); };

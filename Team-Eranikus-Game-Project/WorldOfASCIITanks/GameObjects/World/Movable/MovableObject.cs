@@ -145,6 +145,10 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 case Direction.Top:
                     if (newRow - step >= 0)
                     {
+                        if (CollisionDispatcher.SeeForCollisions(newRow - step, newCol, GameEngine.GameEngine.allWalls))
+                        {
+                            break;
+                        }
                         newRow -= step;
                     }
                     break;
@@ -152,6 +156,10 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 case Direction.Right:
                     if (newCol + step < ConsoleSettings.ConsoleWidth)
                     {
+                        if (CollisionDispatcher.SeeForCollisions(newRow, newCol + step, GameEngine.GameEngine.allWalls))
+                        {
+                            break;
+                        }
                         newCol += step;
                     }
                     break;
@@ -159,6 +167,10 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 case Direction.Down:
                     if (newRow + step < ConsoleSettings.ConsoleHeight)
                     {
+                        if (CollisionDispatcher.SeeForCollisions(newRow + step, newCol, GameEngine.GameEngine.allWalls))
+                        {
+                            break;
+                        }
                         newRow += step;
                     }
                     break;
@@ -166,6 +178,10 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 case Direction.Left:
                     if (newCol - step >= 0)
                     {
+                        if (CollisionDispatcher.SeeForCollisions(newRow, newCol - step, GameEngine.GameEngine.allWalls))
+                        {
+                            break;
+                        }
                         newCol -= step;
                     }
                     break;
