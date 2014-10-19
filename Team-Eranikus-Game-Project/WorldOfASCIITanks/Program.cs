@@ -22,6 +22,7 @@ namespace WorldOfASCIITanks
             ConsoleRenderer renderer = new ConsoleRenderer(ConsoleSettings.ConsoleHeight, ConsoleSettings.ConsoleWidth);
             GameEngine.GameEngine gameEngine = new GameEngine.GameEngine(renderer, keyboard);
 
+            Console.WriteLine("Please select your Hero: \nPress 1 for  Mage\nPress 2 for  Thief\nPress 3 for  Warrior");
             int choiseHero = int.Parse(Console.ReadLine());
                 // TODO implement interface for the choice of type of character
             MainCharacter hero = HeroChoice(choiseHero);
