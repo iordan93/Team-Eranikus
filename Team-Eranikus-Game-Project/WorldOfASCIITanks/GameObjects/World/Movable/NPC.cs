@@ -10,7 +10,7 @@
         private string forArtificialInteligance = "right";
         public override int Team { get; protected set; }
         public NPC(MatrixCoords coords, char[,] body, Weapon weapon)
-            : base(coords, body, 100, 1, 2, 5, 10, 10, weapon, "NPC")
+            : base(coords, body, 100, 1, 2, 5, 10, 10, weapon)
         {
             // TODO: Implement constructor properly
             this.Team = 2;

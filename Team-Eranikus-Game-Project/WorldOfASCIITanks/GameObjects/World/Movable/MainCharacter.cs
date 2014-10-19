@@ -21,9 +21,9 @@
             int defence,
             int experience,
             int level,
-            Weapon weapon,
-            string characterType)
-            : base(coords, body, health, manaPoints, attack, defence, experience, level, weapon, characterType)
+            Weapon weapon
+           )
+            : base(coords, body, health, manaPoints, attack, defence, experience, level, weapon)
         {
             this.Team = 1;
         }
@@ -38,5 +38,7 @@
         public override void Update()
         {
         }
+
+
     }
 }

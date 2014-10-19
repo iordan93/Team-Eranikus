@@ -20,7 +20,6 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
         private int defence;
         private int experience;
         private int level;
-        private string characterType;
 
         public MovableObject(
             MatrixCoords coords,
@@ -31,8 +30,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             int defence,
             int experience,
             int level,
-            Weapon weapon,
-            string characterType)
+            Weapon weapon
+            )
             : base(coords, body)
         {
             this.Health = health;
@@ -42,7 +41,6 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Experience = experience;
             this.Level = level;
             this.AttackWeapon = weapon;
-            this.CharacterType = characterType;
         }
 
         public MovableObject(MatrixCoords coords, char[,] body, Weapon weapon)
@@ -55,8 +53,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 CharacterConstants.DEFENCEPOINTS,
                 CharacterConstants.EXPERIENCE,
                 CharacterConstants.LEVEL,
-                weapon,
-                "")
+                weapon
+                )
         {
         }
 
@@ -135,18 +133,6 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             set
             {
                 this.level = value;
-            }
-        }
-
-        public string CharacterType
-        {
-            get
-            {
-                return this.characterType;
-            }
-            set
-            {
-                this.characterType = value;
             }
         }
         #endregion

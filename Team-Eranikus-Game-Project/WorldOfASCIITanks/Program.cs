@@ -50,17 +50,17 @@ namespace WorldOfASCIITanks
             // TODO: Provide players with their respective default weapons, as needed (instead of null)
             if (heroChoice == 1)
             {
-                MainCharacter heroMage = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, null, "Mage");
+                MainCharacter heroMage = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, null);
                 return heroMage;
             }
             if (heroChoice == 2)
             {
-                MainCharacter heroThief = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, null, "Thief");
+                MainCharacter heroThief = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, null);
                 return heroThief;
             }
             if (heroChoice == 3)
             {
-                MainCharacter heroWarrior = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, null, "Warrior");
+                MainCharacter heroWarrior = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, null);
                 return heroWarrior;
             }
             else
