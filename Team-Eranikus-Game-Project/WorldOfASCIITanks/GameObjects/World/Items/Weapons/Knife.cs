@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
 {
-    internal class Knife : Weapon
+    public class Knife : Weapon
     {
         public Knife()
             : base(10, 10)

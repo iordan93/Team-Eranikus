@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
 {
-    class BattleAxe : Weapon
+    public class BattleAxe : Weapon
     {
 
         public BattleAxe()
-            : base(20, 0)
+            : base(15, 5)
         {
         }
     }

@@ -39,6 +39,12 @@
         {
         }
 
+        public virtual void AttackModifier()
+        {         
+        }
 
+        //public abstract void SpellCastModifier()
+        //{ 
+        //}
     }
 }

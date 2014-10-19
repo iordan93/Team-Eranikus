@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
 {
-    internal class MagicStaff : Weapon
+    public class MagicStaff : Weapon
     {
         public MagicStaff()
-            : base(0,20)
+            : base(5,20)
         {
         }
     }
