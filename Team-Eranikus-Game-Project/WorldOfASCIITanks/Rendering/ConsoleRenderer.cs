@@ -18,7 +18,7 @@ namespace WorldOfASCIITanks.Rendering
         public ConsoleRenderer(int rows, int cols)
         {
             this.world = new char[rows, cols];
-            this.ClearQueque();
+            this.ClearQueue();
         }
 
         public void EnqueueForRendering(GameObject obj)
@@ -59,7 +59,7 @@ namespace WorldOfASCIITanks.Rendering
             Console.Write(output);
         }
 
-        public void ClearQueque()
+        public void ClearQueue()
         {
             for (int row = 0; row < this.world.GetLength(0); row++)
             {

@@ -13,6 +13,6 @@ namespace WorldOfASCIITanks.Interfaces
 
         void RenderAll();
 
-        void ClearQueque();
+        void ClearQueue();
     }
 }

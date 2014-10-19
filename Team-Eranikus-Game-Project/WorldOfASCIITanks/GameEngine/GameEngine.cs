@@ -36,7 +36,7 @@ namespace WorldOfASCIITanks.GameEngine
 
                 this.userInterface.ProcessInput();
 
-                this.renderer.ClearQueque();
+                this.renderer.ClearQueue();
 
                 CollisionDispatcher.SeeForCollisions(this.allObjects);
 

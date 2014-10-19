@@ -23,7 +23,7 @@ namespace WorldOfASCIITanks.GameOBjects.World.Movable
         {
             if (Console.KeyAvailable)
             {
-                ConsoleKeyInfo key = Console.ReadKey();
+                ConsoleKeyInfo key = Console.ReadKey(true);
                 while (Console.KeyAvailable) // for improved character move, not lagging and atc.
                 {
                     Console.ReadKey(true);
