@@ -7,6 +7,8 @@ using WorldOfASCIITanks.Rendering;
 
 namespace WorldOfASCIITanks.GameEngine
 {
+    using WorldOfASCIITanks.GameObjects.World.Movable;
+
     public static class MapParser
     {
         private const string MapEnding = "*****";
@@ -47,6 +49,10 @@ namespace WorldOfASCIITanks.GameEngine
                     return new Wall(coords, WallType.Vertical);
                 case '+':
                     return new Wall(coords, WallType.Corner);
+                case '@':
+                    return null; // TODO: Implement coordinate changing for MainCharacter
+                case '#':
+                    return null; // TODO: Implement coirdinate changing for NPC
                 default:
                     throw new InvalidOperationException("Invalid character encountered: " + ch + ".");
             }
