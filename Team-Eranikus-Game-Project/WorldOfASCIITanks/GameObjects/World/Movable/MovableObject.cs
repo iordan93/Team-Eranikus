@@ -8,22 +8,19 @@ using WorldOfASCIITanks.GameEngine;
 using WorldOfASCIITanks.Interfaces;
 using WorldOfASCIITanks.Rendering;
 using WorldOfASCIITanks.Constants;
+using WorldOfASCIITanks.GameObjects.World.Items;
 
 namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttacker
     {
         private int health;
-
         private int manaPoints;
-
         private int attack;
-
         private int defence;
-
         private int experience;
-
         private int level;
+        private string characterType;
 
         public MovableObject(
             MatrixCoords coords,
@@ -33,7 +30,9 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             int attack,
             int defence,
             int experience,
-            int level)
+            int level,
+            Weapon weapon,
+            string characterType)
             : base(coords, body)
         {
             this.Health = health;
@@ -42,9 +41,11 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.DefencePoints = defence;
             this.Experience = experience;
             this.Level = level;
+            this.AttackWeapon = weapon;
+            this.CharacterType = characterType;
         }
 
-        public MovableObject(MatrixCoords coords, char[,] body)
+        public MovableObject(MatrixCoords coords, char[,] body, Weapon weapon)
             : this(
                 coords,
                 body,
@@ -53,11 +54,13 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 CharacterConstants.ATTACKPOINTS,
                 CharacterConstants.DEFENCEPOINTS,
                 CharacterConstants.EXPERIENCE,
-                CharacterConstants.LEVEL)
-
+                CharacterConstants.LEVEL,
+                weapon,
+                "")
         {
         }
 
+        #region Properties
         public int Health
         {
             get
@@ -92,7 +95,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 
             set
             {
-                this.attack = CharacterConstants.ATTACKPOINTS;
+                this.attack = value;
             }
         }
 
@@ -134,6 +137,19 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 this.level = value;
             }
         }
+
+        public string CharacterType
+        {
+            get
+            {
+                return this.characterType;
+            }
+            set
+            {
+                this.characterType = value;
+            }
+        }
+        #endregion
 
         public virtual void Move(Direction direction, int step = 1)
         {
@@ -199,5 +215,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
         public override void Update()
         {
         }
+
+        public Weapon AttackWeapon { get; set; }
     }
 }

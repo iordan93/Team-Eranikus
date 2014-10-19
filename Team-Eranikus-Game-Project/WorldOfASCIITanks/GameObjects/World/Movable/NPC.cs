@@ -1,15 +1,16 @@
 ﻿namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     using WorldOfASCIITanks.GameEngine;
+    using WorldOfASCIITanks.GameObjects.World.Items;
     using WorldOfASCIITanks.Interfaces;
-using WorldOfASCIITanks.Rendering;
+    using WorldOfASCIITanks.Rendering;
 
     public class NPC : MovableObject
     {
         private string forArtificialInteligance = "right";
         public override int Team { get; protected set; }
-        public NPC(MatrixCoords coords, char[,] body)
-            : base(coords, body, 100, 1, 2, 5, 10, 10)
+        public NPC(MatrixCoords coords, char[,] body, Weapon weapon)
+            : base(coords, body, 100, 1, 2, 5, 10, 10, weapon, "NPC")
         {
             // TODO: Implement constructor properly
             this.Team = 2;

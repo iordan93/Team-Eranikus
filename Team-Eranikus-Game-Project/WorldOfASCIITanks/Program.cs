@@ -18,7 +18,7 @@ namespace WorldOfASCIITanks
             ConsoleSettings.PrepareConsole();
 
             KeyboardInterface keyboard = new KeyboardInterface();
-            NPC enemy = new NPC(new MatrixCoords(3, 3), new char[,] { { '@' } });
+            NPC enemy = new NPC(new MatrixCoords(3, 3), new char[,] { { '@' } }, null);
             ConsoleRenderer renderer = new ConsoleRenderer(ConsoleSettings.ConsoleHeight, ConsoleSettings.ConsoleWidth);
             IList<WorldObject> map = MapParser.ParseMap("../../WorldMaps/map.txt");
             GameEngine.GameEngine gameEngine = new GameEngine.GameEngine(renderer, keyboard);
@@ -47,19 +47,20 @@ namespace WorldOfASCIITanks
         {
             char[,] heroBody = new char[1, 1] { { '*' } };
 
+            // TODO: Provide players with their respective default weapons, as needed (instead of null)
             if (heroChoice == 1)
             {
-                MainCharacter heroMage = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, "Mage");
+                MainCharacter heroMage = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, null, "Mage");
                 return heroMage;
             }
             if (heroChoice == 2)
             {
-                MainCharacter heroThief = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, "Thief");
+                MainCharacter heroThief = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, null, "Thief");
                 return heroThief;
             }
             if (heroChoice == 3)
             {
-                MainCharacter heroWarrior = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, "Warrior");
+                MainCharacter heroWarrior = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, null, "Warrior");
                 return heroWarrior;
             }
             else
