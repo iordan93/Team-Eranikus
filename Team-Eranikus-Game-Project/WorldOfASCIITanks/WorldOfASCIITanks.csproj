@@ -44,6 +44,7 @@
     <Compile Include="Constants\CharacterConstants.cs" />
     <Compile Include="GameEngine\CollisionDispatcher.cs" />
     <Compile Include="GameEngine\GameEngine.cs" />
+    <Compile Include="GameEngine\MapParser.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Menu\MenuObject.cs" />
     <Compile Include="GameObjects\World\Items\CollectableObject.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="GameObjects\World\Map\Wall.cs" />
     <Compile Include="GameEngine\KeyboardInterface.cs" />
     <Compile Include="GameEngine\Direction.cs" />
+    <Compile Include="GameObjects\World\Map\WallType.cs" />
     <Compile Include="GameObjects\World\Movable\MainCharacter.cs" />
     <Compile Include="GameObjects\World\Movable\MovableObject.cs" />
     <Compile Include="GameObjects\World\Movable\NPC.cs" />

@@ -8,8 +8,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
 {
     internal class Knife : Weapon
     {
-        public Knife(int damageHealth, int damageMana)
-            : base(damageHealth, damageMana)
+        public Knife()
+            : base(10, 0)
         {
         }
     }

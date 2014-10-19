@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WorldOfASCIITanks.Interfaces;
 
-namespace WorldOfASCIITanks.GameOBjects.World.Movable
+namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     class KeyboardInterface : IUserInterface
     {

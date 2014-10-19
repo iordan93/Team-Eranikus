@@ -8,8 +8,8 @@ namespace WorldOfASCIITanks.Rendering
 {
     public static class ConsoleSettings
     {
-        public const int ConsoleWidth = 50;
-        public const int ConsoleHeight = 24;
+        public const int ConsoleWidth = 80;
+        public const int ConsoleHeight = 30;
 
         public static void PrepareConsole() 
         {

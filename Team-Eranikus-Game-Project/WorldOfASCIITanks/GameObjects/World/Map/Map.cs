@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WorldOfASCIITanks.Interfaces;
+using WorldOfASCIITanks.Rendering;
 
 namespace WorldOfASCIITanks.GameObjects.World.Map
 {
@@ -11,14 +12,14 @@ namespace WorldOfASCIITanks.GameObjects.World.Map
     {
         public override int Team { get; protected set; }
 
-        public Map():base(null, null)
+        public Map(MatrixCoords coords, char[,] body)
+            : base(coords, body)
         {
-            // TODO: Implement constructor properly
         }
 
         public override void Update()
         {
-            
+
         }
     }
 }
