@@ -50,9 +50,9 @@ namespace WorldOfASCIITanks.GameEngine
                 case '+':
                     return new Wall(coords, WallType.Corner);
                 case '@':
-                    return null; // TODO: Implement coordinate changing for MainCharacter
+                    return new Wall(coords,WallType.Horizontal); // TODO: Implement coordinate changing for MainCharacter
                 case '#':
-                    return null; // TODO: Implement coirdinate changing for NPC
+                    return new Wall(coords, WallType.Horizontal); // TODO: Implement coirdinate changing for NPC
                 default:
                     throw new InvalidOperationException("Invalid character encountered: " + ch + ".");
             }
