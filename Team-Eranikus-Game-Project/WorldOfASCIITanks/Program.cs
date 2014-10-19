@@ -44,17 +44,17 @@ namespace WorldOfASCIITanks
 
             if (heroChoice == 1)
             {
-                MainCharacter heroMage = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1);
+                MainCharacter heroMage = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, "Mage");
                 return heroMage;
             }
             if (heroChoice == 2)
             {
-                MainCharacter heroThief = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1);
+                MainCharacter heroThief = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, "Thief");
                 return heroThief;
             }
             if (heroChoice == 3)
             {
-                MainCharacter heroWarrior = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1);
+                MainCharacter heroWarrior = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, "Warrior");
                 return heroWarrior;
             }
             else

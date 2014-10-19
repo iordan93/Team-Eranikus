@@ -11,7 +11,7 @@ using WorldOfASCIITanks.Constants;
 
 namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
-    public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttackable
+    public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttacker
     {
         private int health;
 
@@ -178,7 +178,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Coords.Col = newCol;
         }
 
-        public abstract void Attack();
+        public abstract void Attack(IAttacker opponent);
 
         public override void Update()
         {

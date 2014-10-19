@@ -3,7 +3,7 @@
     using WorldOfASCIITanks.Rendering;
     using WorldOfASCIITanks.Interfaces;
     using WorldOfASCIITanks.GameEngine;
-
+    using WorldOfASCIITanks.GameObjects.World.Items.Weapons;
     using System;
 
     public class MainCharacter : MovableObject
@@ -18,15 +18,18 @@
             int attack,
             int defence,
             int experience,
-            int level)
+            int level,
+            string characterType)
             : base(coords, body, health, manaPoints, attack, defence, experience, level)
         {
             this.Team = 1;
         }
 
-        public override void Attack()
+        public override void Attack(IAttacker opponent)
         {
-            throw new System.NotImplementedException();
+           Knife knife = new Knife();
+           opponent.Health = opponent.Health - knife.DamageHealth;
+           
         }
 
         public override void Update()
