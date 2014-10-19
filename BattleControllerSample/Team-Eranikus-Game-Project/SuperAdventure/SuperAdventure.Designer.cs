@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 20);
-            this.label1.Name = "Hit Points";
+            this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hit Points:";
@@ -66,7 +66,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(18, 46);
-            this.label2.Name = "Gold";
+            this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Gold:";
@@ -75,7 +75,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(18, 74);
-            this.label3.Name = "Experience";
+            this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Experience:";
@@ -84,7 +84,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(18, 100);
-            this.label4.Name = "Level";
+            this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Level:";
@@ -128,12 +128,13 @@
             this.btnUseWeapon.Size = new System.Drawing.Size(75, 23);
             this.btnUseWeapon.TabIndex = 0;
             this.btnUseWeapon.Text = "Use";
+            this.btnUseWeapon.Click += new System.EventHandler(this.btnUseWeapon_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(617, 531);
-            this.label5.Name = "Select action";
+            this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Select action";
@@ -147,14 +148,13 @@
             this.cboWeapons.TabIndex = 9;
             this.cboWeapons.SelectedIndexChanged += new System.EventHandler(this.cboWeapons_SelectedIndexChanged);
             // 
-            // cboPoints
+            // cboPotions
             // 
             this.cboPotions.FormattingEnabled = true;
             this.cboPotions.Location = new System.Drawing.Point(369, 593);
-            this.cboPotions.Name = "cboPoints";
+            this.cboPotions.Name = "cboPotions";
             this.cboPotions.Size = new System.Drawing.Size(121, 21);
             this.cboPotions.TabIndex = 10;
-            this.cboPotions.SelectedIndexChanged += new System.EventHandler(this.cboPoints_SelectedIndexChanged);
             // 
             // btnUsePotion
             // 
@@ -163,6 +163,7 @@
             this.btnUsePotion.Size = new System.Drawing.Size(75, 23);
             this.btnUsePotion.TabIndex = 11;
             this.btnUsePotion.Text = "Use";
+            this.btnUsePotion.Click += new System.EventHandler(this.btnUsePotion_Click);
             // 
             // btnNorth
             // 
@@ -171,6 +172,7 @@
             this.btnNorth.Size = new System.Drawing.Size(75, 23);
             this.btnNorth.TabIndex = 12;
             this.btnNorth.Text = "North";
+            this.btnNorth.Click += new System.EventHandler(this.btnNorth_Click);
             // 
             // btnEast
             // 
@@ -179,6 +181,7 @@
             this.btnEast.Size = new System.Drawing.Size(75, 23);
             this.btnEast.TabIndex = 13;
             this.btnEast.Text = "East";
+            this.btnEast.Click += new System.EventHandler(this.btnEast_Click);
             // 
             // btnSouth
             // 
@@ -187,14 +190,16 @@
             this.btnSouth.Size = new System.Drawing.Size(75, 23);
             this.btnSouth.TabIndex = 14;
             this.btnSouth.Text = "South";
+            this.btnSouth.Click += new System.EventHandler(this.btnSouth_Click);
             // 
-            // button1
+            // btnWest
             // 
             this.btnWest.Location = new System.Drawing.Point(412, 457);
             this.btnWest.Name = "btnWest";
             this.btnWest.Size = new System.Drawing.Size(75, 23);
             this.btnWest.TabIndex = 15;
             this.btnWest.Text = "West";
+            this.btnWest.Click += new System.EventHandler(this.btnWest_Click);
             // 
             // rtbLocation
             // 
@@ -205,16 +210,16 @@
             this.rtbLocation.TabIndex = 16;
             this.rtbLocation.Text = "";
             // 
-            // rtbMessage
+            // rtbMessages
             // 
             this.rtbMessages.Location = new System.Drawing.Point(347, 130);
-            this.rtbMessages.Name = "rtbMessage";
+            this.rtbMessages.Name = "rtbMessages";
             this.rtbMessages.ReadOnly = true;
             this.rtbMessages.Size = new System.Drawing.Size(360, 286);
             this.rtbMessages.TabIndex = 17;
             this.rtbMessages.Text = "";
             // 
-            // dgvInvetory
+            // dgvInventory
             // 
             this.dgvInventory.AllowUserToAddRows = false;
             this.dgvInventory.AllowUserToDeleteRows = false;
@@ -223,7 +228,7 @@
             this.dgvInventory.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvInventory.Location = new System.Drawing.Point(16, 130);
             this.dgvInventory.MultiSelect = false;
-            this.dgvInventory.Name = "dgvInvetory";
+            this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.Size = new System.Drawing.Size(312, 309);
             this.dgvInventory.TabIndex = 18;

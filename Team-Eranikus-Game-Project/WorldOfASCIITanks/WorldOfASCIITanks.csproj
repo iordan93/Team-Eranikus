@@ -71,12 +71,12 @@
     <Compile Include="GameObjects\World\Movable\MainCharacter.cs" />
     <Compile Include="GameObjects\World\Movable\MovableObject.cs" />
     <Compile Include="GameObjects\World\Movable\NPC.cs" />
+    <Compile Include="Interfaces\IAttacker.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
     <Compile Include="Rendering\ConsoleSettings.cs" />
     <Compile Include="Rendering\MatrixCoords.cs" />
     <Compile Include="Rendering\ConsoleRenderer.cs" />
     <Compile Include="GameObjects\World\WorldObject.cs" />
-    <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\ICollectable.cs" />
     <Compile Include="Interfaces\ICollidable.cs" />
     <Compile Include="Interfaces\IMovable.cs" />

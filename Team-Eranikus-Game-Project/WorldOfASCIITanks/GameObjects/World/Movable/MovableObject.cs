@@ -11,7 +11,7 @@ using WorldOfASCIITanks.Constants;
 
 namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
-    public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttackable
+    public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttacker
     {
         private int health;
 
@@ -44,16 +44,29 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Level = level;
         }
 
+        public MovableObject(MatrixCoords coords, char[,] body)
+            : this(
+                coords,
+                body,
+                CharacterConstants.HEALTH,
+                CharacterConstants.MANAPOINTS,
+                CharacterConstants.ATTACKPOINTS,
+                CharacterConstants.DEFENCEPOINTS,
+                CharacterConstants.EXPERIENCE,
+                CharacterConstants.LEVEL)
+
+        {
+        }
+
         public int Health
         {
             get
             {
                 return this.health;
             }
-
             set
             {
-                this.health = CharacterConstants.HEALTH;
+                this.health = value;
             }
         }
 
@@ -66,7 +79,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 
             set
             {
-                this.manaPoints = CharacterConstants.MANAPOINTS;
+                this.manaPoints = value;
             }
         }
 
@@ -92,7 +105,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 
             set
             {
-                this.defence = CharacterConstants.DEFENCEPOINTS;
+                this.defence = value;
             }
         }
 
@@ -105,7 +118,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 
             set
             {
-                this.experience = CharacterConstants.EXPERIENCE;
+                this.experience = value;
             }
         }
 
@@ -118,7 +131,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 
             set
             {
-                this.level = CharacterConstants.LEVEL;
+                this.level = value;
             }
         }
 
@@ -165,7 +178,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Coords.Col = newCol;
         }
 
-        public abstract void Attack();
+        public abstract void Attack(IAttacker opponent);
 
         public override void Update()
         {

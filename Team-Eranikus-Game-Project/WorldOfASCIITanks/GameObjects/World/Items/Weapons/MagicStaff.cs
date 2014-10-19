@@ -8,8 +8,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
 {
     internal class MagicStaff : Weapon
     {
-        public MagicStaff(int damageHealth, int damageMana)
-            : base(damageHealth, damageMana)
+        public MagicStaff()
+            : base(0,20)
         {
         }
     }

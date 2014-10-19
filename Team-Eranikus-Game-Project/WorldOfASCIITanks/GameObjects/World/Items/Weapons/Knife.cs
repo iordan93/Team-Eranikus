@@ -9,7 +9,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
     internal class Knife : Weapon
     {
         public Knife()
-            : base(10, 0)
+            : base(10, 10)
         {
         }
     }

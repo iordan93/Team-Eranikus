@@ -16,7 +16,7 @@ using WorldOfASCIITanks.Rendering;
         }
 
 
-        public override void Attack()
+        public override void Attack(IAttacker opponent)
         {
             throw new System.NotImplementedException();
         }

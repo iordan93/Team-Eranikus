@@ -2,8 +2,8 @@
 
 namespace WorldOfASCIITanks.Interfaces
 {
-    public interface IAttackable
+    public interface IAttacker : IUnit
     {
-        void Attack();
+        void Attack(IAttacker opponent);
     }
 }

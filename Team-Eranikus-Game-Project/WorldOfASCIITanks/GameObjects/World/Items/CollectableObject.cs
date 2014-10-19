@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using WorldOfASCIITanks.Interfaces;
 
 namespace WorldOfASCIITanks.GameObjects.World.Items
@@ -12,7 +13,6 @@ namespace WorldOfASCIITanks.GameObjects.World.Items
         public CollectableObject()
             : base(null, null)
         {
-
         }
     }
 }
