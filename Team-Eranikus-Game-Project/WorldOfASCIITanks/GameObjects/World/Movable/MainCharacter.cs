@@ -3,13 +3,23 @@
     using WorldOfASCIITanks.Rendering;
     using WorldOfASCIITanks.Interfaces;
     using WorldOfASCIITanks.GameEngine;
+
     using System;
 
     public class MainCharacter : MovableObject
     {
         public override int Team { get; protected set; }
-        public MainCharacter(MatrixCoords coords, char[,] body)
-            : base(coords, body, 100, 100, 100, 100, 100, 1)
+
+        public MainCharacter(
+            MatrixCoords coords,
+            char[,] body,
+            int health,
+            int manaPoints,
+            int attack,
+            int defence,
+            int experience,
+            int level)
+            : base(coords, body, health, manaPoints, attack, defence, experience, level)
         {
             this.Team = 1;
         }
@@ -21,7 +31,6 @@
 
         public override void Update()
         {
-
         }
     }
 }
