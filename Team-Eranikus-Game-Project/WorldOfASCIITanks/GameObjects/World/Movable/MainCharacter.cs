@@ -32,19 +32,21 @@
 
         public override void Attack(IAttacker opponent)
         {
-                  
+            opponent.Health = opponent.Health - AttackPoints*AttackModifier(AttackWeapon);
         }
 
         public override void Update()
         {
         }
 
-        public virtual void AttackModifier()
-        {         
+        public virtual int AttackModifier(Weapon weapon)
+        {
+            int attackMultiplier = 1;
+            return attackMultiplier;
         }
 
-        //public abstract void SpellCastModifier()
-        //{ 
-        //}
+        public virtual void SpellCastModifier()
+        { 
+        }
     }
 }
