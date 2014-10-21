@@ -24,9 +24,9 @@ namespace WorldOfASCIITanks
             GameEngine.GameEngine gameEngine = new GameEngine.GameEngine(renderer, keyboard);
 
             Console.WriteLine("Please select your Hero: \nPress 1 for  Mage\nPress 2 for  Thief\nPress 3 for  Warrior");
-            int choiseHero = int.Parse(Console.ReadLine());
+            int heroChosen = int.Parse(Console.ReadLine());
             // TODO implement interface for the choice of type of character
-            MainCharacter hero = HeroChoice(choiseHero);
+            MainCharacter hero = HeroChoice(heroChosen);
 
             gameEngine.AddObject(hero);
             gameEngine.AddObject(enemy);
@@ -43,22 +43,22 @@ namespace WorldOfASCIITanks
             gameEngine.Run();
         }
 
-        public static MainCharacter HeroChoice(int heroChoice)
+        public static MainCharacter HeroChoice(int heroChosen)
         {
             char[,] heroBody = new char[1, 1] { { '*' } };
 
             // TODO: Provide players with their respective default weapons, as needed (instead of null)
-            if (heroChoice == 1)
+            if (heroChosen == 1)
             {
                 MainCharacter heroMage = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, null);
                 return heroMage;
             }
-            if (heroChoice == 2)
+            if (heroChosen == 2)
             {
                 MainCharacter heroThief = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, null);
                 return heroThief;
             }
-            if (heroChoice == 3)
+            if (heroChosen == 3)
             {
                 MainCharacter heroWarrior = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, null);
                 return heroWarrior;
