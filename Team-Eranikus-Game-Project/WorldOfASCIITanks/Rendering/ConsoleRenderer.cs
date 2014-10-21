@@ -14,12 +14,15 @@ namespace WorldOfASCIITanks.Rendering
     public class ConsoleRenderer : IRenderer
     {
         // Everything is done at this class
+        public static int collsForRenderingStats = 15;
         private int vision = 6;
+        private char[,] placeForRenderStats;
         private char[,] world;
 
         public ConsoleRenderer(int rows, int cols)
         {
             this.world = new char[rows, cols];
+            this.placeForRenderStats = new char[rows, cols + collsForRenderingStats];
             this.ClearQueue();
         }
 
@@ -40,22 +43,36 @@ namespace WorldOfASCIITanks.Rendering
             }
         }
 
-        public void RenderAll()
+        public void RenderAll(MainCharacter character)
         {
             Console.SetCursorPosition(0, 0);
             StringBuilder output = new StringBuilder();
+            string heroLevel = "Level: " + character.Level.ToString();
+            string heroHealth = "Health: " + character.Health.ToString();
+            string heroMana = "Mana: " + character.ManaPoints.ToString();
+            string heroAttackPoints = "Attack: " + character.AttackPoints.ToString();
+            string heroDefensePoints = "Defense: " + character.DefencePoints.ToString();
+            string heroExperiance = "Experiance: " + character.Experience.ToString();
+            //string heroWeapon = "Weapon: " + character.AttackWeapon.ToString();
+
+            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth, heroMana, heroAttackPoints, heroDefensePoints, heroExperiance);
             for (int row = 0; row < this.world.GetLength(0); row++)
             {
                 for (int col = 0; col < this.world.GetLength(1); col++)
                 {
                     char symbol = this.world[row, col];
-                    //Console.SetCursorPosition(col, row);
-                    //Console.Write(symbol);
                     output.Append(this.world[row, col]);
                 }
-                //output.AppendLine();
-                //Console.Write(output);
-                //output.Clear();
+                if (statsForRender.Count != 0)
+                {
+                    for (int i = 0; i < statsForRender[0].Length; i++)
+                    {
+                        output.Append(statsForRender[0][i]);
+                    }
+                    statsForRender.RemoveAt(0);
+                    
+                }
+                output.Append(Environment.NewLine);
             }
 
             Console.Write(output);
@@ -65,6 +82,17 @@ namespace WorldOfASCIITanks.Rendering
         {
             Console.SetCursorPosition(0, 0);
             StringBuilder output = new StringBuilder();
+
+            string heroLevel = "Level: " + character.Level.ToString();
+            string heroHealth = "Health: " + character.Health.ToString();
+            string heroMana = "Mana: " + character.ManaPoints.ToString();
+            string heroAttackPoints = "Attack: " + character.AttackPoints.ToString();
+            string heroDefensePoints = "Defense: " + character.DefencePoints.ToString();
+            string heroExperiance = "Experiance: " + character.Experience.ToString();
+            //string heroWeapon = "Weapon: " + character.AttackWeapon.ToString();
+
+            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth, heroMana, heroAttackPoints, heroDefensePoints, heroExperiance);
+
             for (int row = 0; row < this.world.GetLength(0); row++)
             {
                 for (int col = 0; col < this.world.GetLength(1); col++)
@@ -81,11 +109,53 @@ namespace WorldOfASCIITanks.Rendering
                         output.Append(" ");
                     }
                 }
+                if (statsForRender.Count != 0)
+                {
+                    for (int i = 0; i < statsForRender[0].Length; i++)
+                    {
+                        output.Append(statsForRender[0][i]);
+                    }
+                    statsForRender.RemoveAt(0);
+
+                }
+                output.Append(Environment.NewLine);
             }
 
             Console.Write(output);
         }
 
+        //public void RenderStats(MainCharacter character)
+        //{
+        //    StringBuilder output = new StringBuilder();
+        //    string heroLevel = "Level: " + character.Level.ToString();
+        //    string heroHealth = "Health: " + character.Health.ToString();
+        //    string heroMana = "Mana: " + character.ManaPoints.ToString();
+        //    string heroAttackPoints = "Attack: " + character.AttackPoints.ToString();
+        //    string heroDefensePoints = "Defense: " + character.DefencePoints.ToString();
+        //    string heroExperiance = "Experiance: " + character.Experience.ToString();
+        //    string heroWeapon = "Weapon: " + character.AttackWeapon.ToString();
+            
+        //    char[] statsForRender = MakeHeroStats(heroLevel, heroHealth, heroMana, heroAttackPoints, heroDefensePoints, heroExperiance, heroWeapon);
+
+        //    for (int row = 0; row < this.placeForRenderStats.GetLength(0); row++)
+        //    {
+        //        for (int col = this.world.GetLength(1), endIndex = 0; col < this.placeForRenderStats.GetLength(1) && (endIndex < collsForRenderingStats); col++, endIndex++)
+        //        {
+
+        //        }
+        //    }
+        //    throw new NotImplementedException();
+        //}
+
+        private List<string> MakeHeroStats(params string[] a)
+        {
+            List<string> stats = new List<string>();
+            foreach (var item in a)
+            {
+                stats.Add(item);
+            }
+            return stats;
+        }
         public void ClearQueue()
         {
             for (int row = 0; row < this.world.GetLength(0); row++)
@@ -96,5 +166,8 @@ namespace WorldOfASCIITanks.Rendering
                 }
             }
         }
+
+
+        
     }
 }

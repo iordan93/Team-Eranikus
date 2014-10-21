@@ -12,8 +12,9 @@ namespace WorldOfASCIITanks.Interfaces
     {
         void EnqueueForRendering(GameObject obj);
 
-        void RenderAll();
+        void RenderAll(MainCharacter character);
         void RenderAllVisible(MainCharacter character);
+
 
         void ClearQueue();
     }

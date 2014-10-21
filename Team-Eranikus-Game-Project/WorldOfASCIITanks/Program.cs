@@ -5,6 +5,7 @@ using WorldOfASCIITanks.GameObjects.World;
 using WorldOfASCIITanks.GameObjects.World.Map;
 using WorldOfASCIITanks.GameObjects.World.Movable;
 using WorldOfASCIITanks.Rendering;
+using System.Windows.Forms;
 
 namespace WorldOfASCIITanks
 {
@@ -28,7 +29,6 @@ namespace WorldOfASCIITanks
             Console.Clear();
             // TODO implement interface for the choice of type of character
             MainCharacter hero = HeroChoice(heroChosen);
-
             gameEngine.AddObject(hero);
             gameEngine.AddObject(enemy);
             foreach (var item in map)

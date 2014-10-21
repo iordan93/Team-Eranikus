@@ -59,7 +59,8 @@ namespace WorldOfASCIITanks.GameEngine
         {
             while (true)
             {
-                //this.renderer.RenderAll();
+                
+                //this.renderer.RenderAll(character);
                 this.renderer.RenderAllVisible(character);
 
                 Thread.Sleep(150);
@@ -69,12 +70,12 @@ namespace WorldOfASCIITanks.GameEngine
                 this.renderer.ClearQueue();
 
                 CollisionDispatcher.SeeForCollisions(this.allObjects);
-
                 foreach (var obj in allObjects)
                 {
                     obj.Update();
                     this.renderer.EnqueueForRendering(obj);
                 }
+                
             }
         }
     }

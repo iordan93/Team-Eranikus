@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WorldOfASCIITanks.GameObjects;
 using WorldOfASCIITanks.GameObjects.World.Map;
+using WorldOfASCIITanks.GameObjects.World.Movable;
 
 namespace WorldOfASCIITanks.GameEngine
 {
@@ -20,9 +21,11 @@ namespace WorldOfASCIITanks.GameEngine
                 {
                     if (!alreadyCollided[firstObject])
                     {
-                        if (allObjects[firstObject].CanCollideWith(allObjects[secondObject]))
+                        if (allObjects[firstObject].CanCollideWith(allObjects[secondObject]) &&
+                            (!(allObjects[firstObject] is Wall) || !(allObjects[secondObject] is Wall)))
                         {
                             alreadyCollided[secondObject] = true;
+                            (allObjects[firstObject] as MovableObject).Attack(allObjects[secondObject] as MovableObject);
                             Console.ReadLine();
                         }
                     }
