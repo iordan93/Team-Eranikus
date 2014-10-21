@@ -28,7 +28,7 @@
         {
             if (forArtificialInteligance == "right")
             {
-                this.Coords.Col++;
+                this.Move(Direction.Right);
                 if (this.Coords.Col == ConsoleSettings.ConsoleWidth / 2 + (ConsoleSettings.ConsoleWidth / 4))
                 {
                     forArtificialInteligance = "down";
@@ -36,7 +36,7 @@
             }
             else if(forArtificialInteligance == "down")
             {
-                this.Coords.Row++;
+                this.Move(Direction.Down);
                 if (this.Coords.Row == ConsoleSettings.ConsoleHeight / 2 + (ConsoleSettings.ConsoleHeight / 4))
                 {
                     forArtificialInteligance = "left";
@@ -44,7 +44,7 @@
             }
             else if(forArtificialInteligance == "left")
             {
-                this.Coords.Col--;
+                this.Move(Direction.Left);
                 if (this.Coords.Col == ConsoleSettings.ConsoleWidth / 2 - (ConsoleSettings.ConsoleWidth / 4))
                 {
 
@@ -53,7 +53,7 @@
             }
             else if(forArtificialInteligance == "up")
             {
-                this.Coords.Row--;
+                this.Move(Direction.Top);
                 if (this.Coords.Row == ConsoleSettings.ConsoleHeight / 2 - (ConsoleSettings.ConsoleHeight / 4))
                 {
                     forArtificialInteligance = "right";

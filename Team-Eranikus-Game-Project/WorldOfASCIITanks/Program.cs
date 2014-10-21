@@ -25,6 +25,7 @@ namespace WorldOfASCIITanks
 
             Console.WriteLine("Please select your Hero: \nPress 1 for  Mage\nPress 2 for  Thief\nPress 3 for  Warrior");
             int heroChosen = int.Parse(Console.ReadLine());
+            Console.Clear();
             // TODO implement interface for the choice of type of character
             MainCharacter hero = HeroChoice(heroChosen);
 

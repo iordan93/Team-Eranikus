@@ -8,6 +8,7 @@ using WorldOfASCIITanks.Interfaces;
 using System.Threading;
 using WorldOfASCIITanks.GameObjects.World;
 using WorldOfASCIITanks.GameObjects.World.Map;
+using WorldOfASCIITanks.GameObjects.World.Movable;
 
 namespace WorldOfASCIITanks.GameEngine
 {
@@ -15,6 +16,7 @@ namespace WorldOfASCIITanks.GameEngine
     {
         private IRenderer renderer;
         private IUserInterface userInterface;
+        private MainCharacter character;
         private List<GameObject> allObjects;
         public static List<Wall> allWalls;
         private IList<WorldObject> map = MapParser.ParseMap("../../WorldMaps/map.txt");
@@ -35,6 +37,12 @@ namespace WorldOfASCIITanks.GameEngine
             if (obj is Wall)
             {
                 AddWall(obj as Wall);
+                this.allObjects.Add(obj);
+            }
+            else if(obj is MainCharacter)
+            {
+                character = obj as MainCharacter;
+                this.allObjects.Add(obj);
             }
             else
             {
@@ -51,7 +59,8 @@ namespace WorldOfASCIITanks.GameEngine
         {
             while (true)
             {
-                this.renderer.RenderAll();
+                //this.renderer.RenderAll();
+                this.renderer.RenderAllVisible(character);
 
                 Thread.Sleep(150);
 
@@ -65,11 +74,6 @@ namespace WorldOfASCIITanks.GameEngine
                 {
                     obj.Update();
                     this.renderer.EnqueueForRendering(obj);
-                }
-
-                foreach (var item in allWalls)
-                {
-                    this.renderer.EnqueueForRendering(item);
                 }
             }
         }

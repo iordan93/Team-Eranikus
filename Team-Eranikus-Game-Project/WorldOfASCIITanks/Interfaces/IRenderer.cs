@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WorldOfASCIITanks.GameObjects;
+using WorldOfASCIITanks.GameObjects.World.Movable;
 
 namespace WorldOfASCIITanks.Interfaces
 {
@@ -12,6 +13,7 @@ namespace WorldOfASCIITanks.Interfaces
         void EnqueueForRendering(GameObject obj);
 
         void RenderAll();
+        void RenderAllVisible(MainCharacter character);
 
         void ClearQueue();
     }
