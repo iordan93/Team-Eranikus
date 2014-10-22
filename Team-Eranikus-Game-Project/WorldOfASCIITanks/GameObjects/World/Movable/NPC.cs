@@ -5,11 +5,11 @@
     using WorldOfASCIITanks.Interfaces;
     using WorldOfASCIITanks.Rendering;
 
-    public class NPC : MovableObject
+    public class Opponent : MovableObject
     {
         private string forArtificialInteligance = "right";
         public override int Team { get; protected set; }
-        public NPC(MatrixCoords coords, char[,] body, Weapon weapon)
+        public Opponent(MatrixCoords coords, char[,] body, Weapon weapon)
             : base(coords, body, 100, 1, 2, 5, 10, 10, weapon)
         {
             // TODO: Implement constructor properly
@@ -21,8 +21,6 @@
         {
             throw new System.NotImplementedException();
         }
-
-
 
         private void AiOfNPC()
         {

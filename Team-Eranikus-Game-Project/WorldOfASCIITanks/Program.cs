@@ -15,19 +15,24 @@ namespace WorldOfASCIITanks
 
     public class Program
     {
+        // helps run the winForm
         [STAThread]
         private static void Main()
         {
             ConsoleSettings.PrepareConsole();
             KeyboardInterface keyboard = new KeyboardInterface();
 
-            NPC enemy = new NPC(new MatrixCoords(3, 3), new char[,] { { '@' } }, null);
+            Opponent enemy = new Opponent(new MatrixCoords(3, 3), new char[,] { { '@' } }, null);
+            
             ConsoleRenderer renderer = new ConsoleRenderer(ConsoleSettings.ConsoleHeight, ConsoleSettings.ConsoleWidth);
+            
             IList<WorldObject> map = MapParser.ParseMap("../../WorldMaps/map.txt");
+            
             GameEngine.GameEngine gameEngine = new GameEngine.GameEngine(renderer, keyboard);
 
-            Console.WriteLine("Please select your Hero: \nPress 1 for  Mage\nPress 2 for  Thief\nPress 3 for  Warrior");
             int heroChosen = 0;
+            Console.WriteLine("Please select your Hero: \nPress 1 for  Mage\nPress 2 for  Thief\nPress 3 for  Warrior");
+            
             // validates hero choice and let's player choose correctly
             do
             {
@@ -43,12 +48,14 @@ namespace WorldOfASCIITanks
                 
             } while (!true||heroChosen<1||heroChosen>3);
             
-            
             Console.Clear();
+
             // TODO implement interface for the choice of type of character
             MainCharacter hero = HeroChoice(heroChosen);
+            
             gameEngine.AddObject(hero);
             gameEngine.AddObject(enemy);
+            
             foreach (var item in map)
             {
                 gameEngine.AddObject(item);

@@ -55,16 +55,12 @@
     <Compile Include="GameEngine\MapParser.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Menu\MenuObject.cs" />
-    <Compile Include="GameObjects\World\Items\CollectableObject.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Fireball.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Frostbolt.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Heal.cs" />
-    <Compile Include="GameObjects\World\Items\Potions\Health.cs" />
+    <Compile Include="GameObjects\World\Items\Potions\HealingPotion.cs" />
     <Compile Include="GameObjects\World\Items\Spells\MagicShield.cs" />
     <Compile Include="GameObjects\World\Items\Potions\Mana.cs" />
-    <Compile Include="GameObjects\World\Items\NegativeCollectableObject.cs" />
-    <Compile Include="GameObjects\World\Items\PositiveCollectableObject.cs" />
-    <Compile Include="GameObjects\World\Items\Potion.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Rage.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Spell.cs" />
     <Compile Include="GameObjects\World\Items\Weapons\BattleAxe.cs" />

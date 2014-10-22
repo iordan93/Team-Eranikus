@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WorldOfASCIITanks.GameObjects.World.Items
 {
-    public class Mana : Potion
+    public class Mana 
     {
     }
 }
