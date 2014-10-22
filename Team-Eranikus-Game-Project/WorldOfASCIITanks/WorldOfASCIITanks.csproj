@@ -49,6 +49,7 @@
     <Compile Include="BattleController.Designer.cs">
       <DependentUpon>BattleController.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameObjects\World\Items\CollectableObject.cs" />
     <Compile Include="Constants\CharacterConstants.cs" />
     <Compile Include="GameEngine\CollisionDispatcher.cs" />
     <Compile Include="GameEngine\GameEngine.cs" />
@@ -81,8 +82,11 @@
     <Compile Include="Interfaces\IAttacker.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
     <Compile Include="Interfaces\RandomGenerator.cs" />
-    <Compile Include="InventoryItem.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="GameObjects\World\Items\InventoryItem.cs" />
+    <Compile Include="GameObjects\World\Items\Item.cs" />
+    <Compile Include="GameObjects\World\Items\NegativeCollectableObject.cs" />
+    <Compile Include="GameObjects\World\Items\PositiveCollectableObject.cs" />
+    <Compile Include="GameObjects\World\Items\Potion.cs" />
     <Compile Include="Rendering\ConsoleSettings.cs" />
     <Compile Include="Rendering\MatrixCoords.cs" />
     <Compile Include="Rendering\ConsoleRenderer.cs" />
@@ -99,6 +103,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram.cd" />
+    <None Include="Properties\DataSources\WorldOfASCIITanks.GameObjects.World.Items.Weapons.BattleAxe.datasource" />
+    <None Include="Properties\DataSources\WorldOfASCIITanks.GameObjects.World.Items.Weapons.Knife.datasource" />
+    <None Include="Properties\DataSources\WorldOfASCIITanks.GameObjects.World.Items.Weapons.MagicStaff.datasource" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BattleController.resx">

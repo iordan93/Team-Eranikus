@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace WorldOfASCIITanks.GameObjects.World.Items
 {
-    public class HealingPotion
+    public class HealingPotion : Potion
     {
         public HealingPotion(int amountToHeal)
         {
             this.AmountToHeal = amountToHeal;
         }
-        public int AmountToHeal { get; set; }
+
+        public int AmountToHeal { get; private set; }
     }
 }

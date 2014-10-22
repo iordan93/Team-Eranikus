@@ -8,5 +8,11 @@ namespace WorldOfASCIITanks.GameObjects.World.Items
 {
     public class Mana 
     {
+        public Mana(int amount)
+        {
+            this.Amount = amount;
+        }
+
+        public int Amount { get; private set; }
     }
 }

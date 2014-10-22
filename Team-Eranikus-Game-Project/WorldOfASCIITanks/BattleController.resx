@@ -121,7 +121,7 @@
   <data name="PlayerPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAN0AAAC+CAIAAAA+xp25AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAHORJREFUeF7tnf+PHsV5wPkLSqhUJWqpTE0kaIpq5NQVlSBqrUoICbWItkgUFFJE
+        wgAADsIBFShKgAAAHORJREFUeF7tnf+PHsV5wPkLSqhUJWqpTE0kaIpq5NQVlSBqrUoICbWItkgUFFJE
         JCekWEWySkVoE0S+KAihJEJICaQUIcCIGp/ts89fMOAzZ9w4NaWiLsQWgURV8wPg7z7HvnM/rx8zHZ7d
         nZ2Zndnd17fWR9bd7L777s5+9nmemd173ws+/MXagYG+MXg50EcGLwf6yODlQB8ZvBzoBa+9/fhXX7vn
         6qmbF09cD4OXA53x5OsPGhGv23rbIz954M0DT8mijF7Ozmw/+O461TiwwLFdXPnq3UZERUYvD789eWrb
@@ -250,7 +250,7 @@
   <data name="OpponentPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAN0AAAC+CAIAAAA+xp25AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAEFNJREFUeF7tnU/IXsUVxt2UZqerko3QhYtCsxC6sVkVV3FRyKouutBFETcWFy4E
+        wgAADsIBFShKgAAAEFNJREFUeF7tnU/IXsUVxt2UZqerko3QhYtCsxC6sVkVV3FRyKouutBFETcWFy4E
         N+KiIl0EoSBdBaRJIJSKiBqINNbWBlIk8GEJAeEjBGkUJNCNy/aJ5/Vk8tz73jt/zsyde78TfoT3zMw9
         c2bmyfy77/floYfevuM43cG24/QA247TA2w7Tg+w7Tg9wLbj9ADbk5y6dP7K4clnP36T0h3HGLYn+c/X
         P/rffx/69u4PKd1xjGF7EohSoHTHMYbtSVyXTiPYnsR16TSC7Ulcl04j2J4EJx7R5ctXX6Esx7GE7UnO

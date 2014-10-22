@@ -47,3 +47,5 @@ D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\o
 D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csproj.GenerateResource.Cache
 D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe
 D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.pdb
+D:\SoftUni\Object-Oriented Programming\Object-oriented Programming Teamwork\Team-Eranikus\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfAsciiTanksWForms.BattleController.resources
+D:\SoftUni\Object-Oriented Programming\Object-oriented Programming Teamwork\Team-Eranikus\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csproj.GenerateResource.Cache
