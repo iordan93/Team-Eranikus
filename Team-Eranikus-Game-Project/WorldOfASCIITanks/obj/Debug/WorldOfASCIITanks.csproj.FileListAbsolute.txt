@@ -39,3 +39,11 @@ C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranik
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfAsciiTanksWForms.BattleController.resources
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csproj.GenerateResource.Cache
+D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe.config
+D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.exe
+D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.pdb
+D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csprojResolveAssemblyReference.cache
+D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfAsciiTanksWForms.BattleController.resources
+D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csproj.GenerateResource.Cache
+D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe
+D:\SoftUni\OOP\TeamEranikus\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.pdb

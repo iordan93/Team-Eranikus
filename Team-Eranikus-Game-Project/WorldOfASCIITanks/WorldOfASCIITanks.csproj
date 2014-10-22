@@ -72,9 +72,12 @@
     <Compile Include="GameEngine\KeyboardInterface.cs" />
     <Compile Include="GameEngine\Direction.cs" />
     <Compile Include="GameObjects\World\Map\WallType.cs" />
+    <Compile Include="GameObjects\World\Movable\Mage.cs" />
     <Compile Include="GameObjects\World\Movable\MainCharacter.cs" />
     <Compile Include="GameObjects\World\Movable\MovableObject.cs" />
     <Compile Include="GameObjects\World\Movable\Opponent.cs" />
+    <Compile Include="GameObjects\World\Movable\Thief.cs" />
+    <Compile Include="GameObjects\World\Movable\Warrior.cs" />
     <Compile Include="Interfaces\IAttacker.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
     <Compile Include="Interfaces\RandomGenerator.cs" />

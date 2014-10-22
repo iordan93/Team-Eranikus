@@ -12,7 +12,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
     public class Mage : MainCharacter
     {
         public Mage(MatrixCoords coords, char[,] body)
-            : base(coords, body, 20, 80, 1, 10, 0, 1, new MagicStaff())
+            : base(coords, body, 20, 80, 1, 0, 1, new MagicStaff())
         { 
         }
 
