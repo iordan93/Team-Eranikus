@@ -33,7 +33,7 @@
 
         public IList<Spell> Spells { get; set; }
 
-        public IList<HealingPotion> MyProperty { get; set; }
+        public IList<Potion> Potions { get; set; }
 
         public override void Update()
         {
