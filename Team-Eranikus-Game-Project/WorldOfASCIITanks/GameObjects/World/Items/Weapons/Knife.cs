@@ -8,8 +8,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
 {
     public class Knife : Weapon
     {
-        public Knife()
-            : base(10, 10)
+        public Knife(string name)
+            : base(name, 10, 10)
         {
         }
     }

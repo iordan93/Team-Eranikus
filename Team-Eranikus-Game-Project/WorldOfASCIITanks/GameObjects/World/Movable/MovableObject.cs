@@ -14,6 +14,24 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttacker
     {
+        private List<Item> inventory = new List<Item>();
+        private IList<Weapon> weapons = new List<Weapon>();
+        private IList<Spell> spells = new List<Spell>();
+        private IList<Potion> potions = new List<Potion>();
+        public Weapon Weapon { get; set; }
+        public int Health { get; set; }
+        public int AttackPoints { get; set; }
+        public int Level { get; set; }
+        public int Experience { get; set; }
+        public int Mana { get; set; }
+
+        public List<Item> Inventory
+        {
+            get
+            {
+                return this.inventory;
+            }
+        }
         public MovableObject(MatrixCoords coords, char[,] body,
             int healthPoints,
             int manaPoints,
@@ -35,7 +53,10 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 
 
         #endregion
-
+        
+        public override void Update()
+        {
+        }
         public virtual void Move(Direction direction, int step = 1)
         {
             int newRow = this.Coords.Row;
@@ -94,31 +115,33 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Coords.Row = newRow;
             this.Coords.Col = newCol;
         }
-        public override void Update()
+        public void AttackWithWeapon(Weapon weapon, IAttacker enemy)
         {
-        }
-        public Weapon Weapon { get; set; }
-
-        public Weapon AttackWeapon
-        {
-            get
+            if (this.weapons.Contains(weapon))
             {
-                throw new NotImplementedException();
+                Random randomWeaponDmg = new Random();
+                enemy.Health -= this.AttackPoints + randomWeaponDmg.Next(weapon.MinDmg, weapon.MaxDmg);
             }
-            set
+            else
             {
-                throw new NotImplementedException();
+                throw new ArgumentException("weapon does not exists in maincharacter or opponent");
             }
         }
-        public int Health { get; set; }
 
+        public void AddSpell(Potion item)
+        {
+            this.potions.Add(item);
+        }
 
-        public int AttackPoints { get; set; }
+        public void AddWeapon(Weapon weapon)
+        {
+            this.weapons.Add(weapon);
+            this.inventory.Add(weapon);
+        }
 
-        public int Level { get; set; }
-        public int Experience { get; set; }
-
-
-        public int Mana { get; set; }
+        public void AddPotion(Potion potion)
+        {
+            this.potions.Add(potion);
+        }
     }
 }

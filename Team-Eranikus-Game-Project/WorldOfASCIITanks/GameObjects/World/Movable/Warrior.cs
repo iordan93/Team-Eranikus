@@ -12,7 +12,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
     public class Warrior : MainCharacter
     {
         public Warrior(MatrixCoords coords, char[,] body)
-            : base(coords, body, 80, 20, 1, 0, 1, new BattleAxe())
+            : base(coords, body, 80, 20, 1, 0, 1, new BattleAxe("qko axe"))
         {         
         }
 

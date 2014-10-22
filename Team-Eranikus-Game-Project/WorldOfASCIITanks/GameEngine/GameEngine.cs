@@ -60,8 +60,8 @@ namespace WorldOfASCIITanks.GameEngine
             while (true)
             {
                 
-                //this.renderer.RenderAll(character);
-                this.renderer.RenderAllVisible(character);
+                this.renderer.RenderAll(character);
+                //this.renderer.RenderAllVisible(character);
 
                 Thread.Sleep(150);
 

@@ -8,8 +8,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
 {
     public class MagicStaff : Weapon
     {
-        public MagicStaff()
-            : base(5,20)
+        public MagicStaff(string name)
+            : base(name, 5,20)
         {
         }
     }

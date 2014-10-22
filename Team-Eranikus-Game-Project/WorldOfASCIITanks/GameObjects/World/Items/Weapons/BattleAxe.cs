@@ -9,8 +9,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Items.Weapons
     public class BattleAxe : Weapon
     {
 
-        public BattleAxe()
-            : base(15, 5)
+        public BattleAxe(string name)
+            : base(name, 15, 5)
         {
         }
     }

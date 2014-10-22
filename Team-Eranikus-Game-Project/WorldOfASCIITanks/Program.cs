@@ -12,6 +12,7 @@ namespace WorldOfASCIITanks
 {
     using System.Collections.Generic;
     using WorldOfASCIITanks.GameObjects.World.Items;
+    using WorldOfASCIITanks.GameObjects.World.Items.Weapons;
 
     public class Program
     {
@@ -52,7 +53,8 @@ namespace WorldOfASCIITanks
 
             // TODO implement interface for the choice of type of character
             MainCharacter hero = HeroChoice(heroChosen);
-            
+            hero.AddWeapon(new Knife("qk knife") {  MaxDmg = 30, MinDmg = 20});
+            //hero.AddWeapon(new Knife("mnogo qk knife") { MaxDmg = 30, MinDmg = 20 });
             gameEngine.AddObject(hero);
             gameEngine.AddObject(enemy);
             

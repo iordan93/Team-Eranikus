@@ -14,7 +14,7 @@ namespace WorldOfASCIITanks.Rendering
         public static void PrepareConsole() 
         {
             // TODO: CursorVisible, colors, etc.
-            Console.BufferWidth = Console.WindowWidth = ConsoleWidth + 12;
+            Console.BufferWidth = Console.WindowWidth = ConsoleWidth + 15;
             Console.BufferHeight = Console.WindowHeight = ConsoleHeight + 1;
             Console.CursorVisible = false;
         }

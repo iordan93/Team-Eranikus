@@ -1,15 +1,16 @@
 ﻿namespace WorldOfASCIITanks.GameObjects.World.Items
 {
-    public class Weapon
+    public class Weapon : Item
     {
-        public Weapon(int damageHealth, int damageMana)
+        public Weapon(string name, int minDmg, int maxDmg)
+            :base(name)
         {
-            this.DamageHealth = damageHealth;
-            this.DamageMana = damageMana;
+            this.MinDmg = minDmg;
+            this.MaxDmg = maxDmg;
         }
         // no need of fields
-        public int DamageHealth { get; set; }
-        public int DamageMana { get; set; }
+        public int MinDmg { get; set; }
+        public int MaxDmg { get; set; }
 
     }
 }
