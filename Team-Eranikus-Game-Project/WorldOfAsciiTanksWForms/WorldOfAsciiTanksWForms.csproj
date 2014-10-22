@@ -78,12 +78,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WorldOfASCIITanks\WorldOfASCIITanks.csproj">
-      <Project>{73b90876-79ac-4bba-8d80-95377de37864}</Project>
-      <Name>WorldOfASCIITanks</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

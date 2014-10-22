@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using WorldOfASCIITanks.GameObjects;
 using WorldOfASCIITanks.GameObjects.World.Map;
 using WorldOfASCIITanks.GameObjects.World.Movable;
+using WorldOfAsciiTanksWForms;
 
 namespace WorldOfASCIITanks.GameEngine
 {

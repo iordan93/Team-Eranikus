@@ -37,3 +37,5 @@ C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranik
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.pdb
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfAsciiTanksWForms.BattleController.resources
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csproj.GenerateResource.Cache

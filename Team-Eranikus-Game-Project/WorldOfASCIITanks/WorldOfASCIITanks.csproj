@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BattleController.Designer.cs">
+      <DependentUpon>BattleController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Constants\CharacterConstants.cs" />
     <Compile Include="GameEngine\CollisionDispatcher.cs" />
     <Compile Include="GameEngine\GameEngine.cs" />
@@ -90,6 +97,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BattleController.resx">
+      <DependentUpon>BattleController.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

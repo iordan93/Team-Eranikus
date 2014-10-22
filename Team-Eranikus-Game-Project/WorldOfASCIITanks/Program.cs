@@ -19,8 +19,8 @@ namespace WorldOfASCIITanks
         private static void Main()
         {
             ConsoleSettings.PrepareConsole();
-
             KeyboardInterface keyboard = new KeyboardInterface();
+
             NPC enemy = new NPC(new MatrixCoords(3, 3), new char[,] { { '@' } }, null);
             ConsoleRenderer renderer = new ConsoleRenderer(ConsoleSettings.ConsoleHeight, ConsoleSettings.ConsoleWidth);
             IList<WorldObject> map = MapParser.ParseMap("../../WorldMaps/map.txt");
