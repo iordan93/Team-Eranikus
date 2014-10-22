@@ -5,6 +5,7 @@ using WorldOfASCIITanks.GameObjects.World;
 using WorldOfASCIITanks.GameObjects.World.Map;
 using WorldOfASCIITanks.GameObjects.World.Movable;
 using WorldOfASCIITanks.Rendering;
+
 using System.Windows.Forms;
 
 namespace WorldOfASCIITanks
@@ -14,6 +15,7 @@ namespace WorldOfASCIITanks
 
     public class Program
     {
+        [STAThread]
         private static void Main()
         {
             ConsoleSettings.PrepareConsole();

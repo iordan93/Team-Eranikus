@@ -51,7 +51,7 @@
             this.btnUse = new System.Windows.Forms.Button();
             this.PlayerPicture = new System.Windows.Forms.PictureBox();
             this.OpponentPicture = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rtbMessages = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PlayerPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpponentPicture)).BeginInit();
             this.SuspendLayout();
@@ -165,6 +165,7 @@
             this.label10.Size = new System.Drawing.Size(33, 13);
             this.label10.TabIndex = 15;
             this.label10.Text = "Level";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label13
             // 
@@ -195,7 +196,7 @@
             // cboPotions
             // 
             this.cboPotions.FormattingEnabled = true;
-            this.cboPotions.Location = new System.Drawing.Point(15, 498);
+            this.cboPotions.Location = new System.Drawing.Point(12, 498);
             this.cboPotions.Name = "cboPotions";
             this.cboPotions.Size = new System.Drawing.Size(121, 21);
             this.cboPotions.TabIndex = 18;
@@ -204,14 +205,14 @@
             // cboWeapon
             // 
             this.cboWeapon.FormattingEnabled = true;
-            this.cboWeapon.Location = new System.Drawing.Point(15, 469);
+            this.cboWeapon.Location = new System.Drawing.Point(12, 469);
             this.cboWeapon.Name = "cboWeapon";
             this.cboWeapon.Size = new System.Drawing.Size(121, 21);
             this.cboWeapon.TabIndex = 19;
             // 
             // btnUseWeapon
             // 
-            this.btnUseWeapon.Location = new System.Drawing.Point(142, 467);
+            this.btnUseWeapon.Location = new System.Drawing.Point(139, 467);
             this.btnUseWeapon.Name = "btnUseWeapon";
             this.btnUseWeapon.Size = new System.Drawing.Size(75, 23);
             this.btnUseWeapon.TabIndex = 20;
@@ -221,13 +222,12 @@
             // btnUse
             // 
             this.btnUse.AllowDrop = true;
-            this.btnUse.Location = new System.Drawing.Point(143, 496);
+            this.btnUse.Location = new System.Drawing.Point(140, 496);
             this.btnUse.Name = "btnUse";
             this.btnUse.Size = new System.Drawing.Size(75, 23);
             this.btnUse.TabIndex = 21;
             this.btnUse.Text = "Use";
             this.btnUse.UseVisualStyleBackColor = true;
-            this.btnUse.Click += new System.EventHandler(this.button2_Click);
             // 
             // PlayerPicture
             // 
@@ -247,13 +247,13 @@
             this.OpponentPicture.TabIndex = 23;
             this.OpponentPicture.TabStop = false;
             // 
-            // textBox1
+            // rtbMessages
             // 
-            this.textBox1.Location = new System.Drawing.Point(236, 384);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(336, 135);
-            this.textBox1.TabIndex = 24;
+            this.rtbMessages.Location = new System.Drawing.Point(224, 384);
+            this.rtbMessages.Name = "rtbMessages";
+            this.rtbMessages.Size = new System.Drawing.Size(348, 136);
+            this.rtbMessages.TabIndex = 24;
+            this.rtbMessages.Text = "";
             // 
             // BattleController
             // 
@@ -261,7 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 561);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.rtbMessages);
             this.Controls.Add(this.OpponentPicture);
             this.Controls.Add(this.PlayerPicture);
             this.Controls.Add(this.btnUse);
@@ -294,6 +294,16 @@
 
         }
 
+        private void BattleController_Load(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.Label label1;
@@ -318,6 +328,6 @@
         private System.Windows.Forms.Button btnUse;
         private System.Windows.Forms.PictureBox PlayerPicture;
         private System.Windows.Forms.PictureBox OpponentPicture;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox rtbMessages;
     }
 }

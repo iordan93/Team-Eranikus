@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using WorldOfASCIITanks.GameObjects;
 using WorldOfASCIITanks.GameObjects.World.Map;
 using WorldOfASCIITanks.GameObjects.World.Movable;
@@ -26,7 +27,11 @@ namespace WorldOfASCIITanks.GameEngine
                         {
                             alreadyCollided[secondObject] = true;
                             (allObjects[firstObject] as MovableObject).Attack(allObjects[secondObject] as MovableObject);
-                            Console.ReadLine();
+
+                            Application.EnableVisualStyles();
+                            Application.SetCompatibleTextRenderingDefault(false);
+                            Application.Run(new BattleController());
+
                         }
                     }
                 }
