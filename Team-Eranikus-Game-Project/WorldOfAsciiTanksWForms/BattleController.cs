@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorldOfASCIITanks.GameObjects.World.Movable;
 
 namespace WorldOfAsciiTanksWForms
 {
@@ -15,29 +16,15 @@ namespace WorldOfAsciiTanksWForms
         public BattleController()
         {
             InitializeComponent();
+
+
+            lblHitPoints.Text = MainCharacter.ToString();
+            lblGold.Text = _player.Gold.ToString();
+            lblExperience.Text = _player.ExperiencePoints.ToString();
+            lblLevel.Text = _player.Level.ToString();
         }
 
         private void BattleController_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
         {
 
         }
@@ -112,14 +99,5 @@ namespace WorldOfAsciiTanksWForms
 
         }
 
-        private void PlayerPicture_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OpponentPicture_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

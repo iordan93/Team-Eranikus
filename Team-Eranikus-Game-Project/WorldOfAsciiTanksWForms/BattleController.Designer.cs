@@ -43,7 +43,7 @@
             this.lblLevelOpponent = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblNameOpponent = new System.Windows.Forms.Label();
             this.OpponentName = new System.Windows.Forms.Label();
             this.cboPotions = new System.Windows.Forms.ComboBox();
             this.cboWeapon = new System.Windows.Forms.ComboBox();
@@ -51,6 +51,7 @@
             this.btnUse = new System.Windows.Forms.Button();
             this.PlayerPicture = new System.Windows.Forms.PictureBox();
             this.OpponentPicture = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PlayerPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpponentPicture)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +64,6 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblName
             // 
@@ -72,7 +72,6 @@
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(0, 13);
             this.lblName.TabIndex = 1;
-            this.lblName.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -86,7 +85,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 119);
+            this.label4.Location = new System.Drawing.Point(12, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 3;
@@ -100,7 +99,6 @@
             this.label5.Size = new System.Drawing.Size(60, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Experience";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -110,7 +108,6 @@
             this.label6.Size = new System.Drawing.Size(33, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Level";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // lblLevel
             // 
@@ -151,7 +148,6 @@
             this.lblHitPointsOpponent.Name = "lblHitPointsOpponent";
             this.lblHitPointsOpponent.Size = new System.Drawing.Size(0, 13);
             this.lblHitPointsOpponent.TabIndex = 17;
-            this.lblHitPointsOpponent.Click += new System.EventHandler(this.label8_Click);
             // 
             // lblLevelOpponent
             // 
@@ -160,7 +156,6 @@
             this.lblLevelOpponent.Name = "lblLevelOpponent";
             this.lblLevelOpponent.Size = new System.Drawing.Size(0, 13);
             this.lblLevelOpponent.TabIndex = 16;
-            this.lblLevelOpponent.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -170,7 +165,6 @@
             this.label10.Size = new System.Drawing.Size(33, 13);
             this.label10.TabIndex = 15;
             this.label10.Text = "Level";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label13
             // 
@@ -180,16 +174,14 @@
             this.label13.Size = new System.Drawing.Size(52, 13);
             this.label13.TabIndex = 12;
             this.label13.Text = "Hit Points";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
-            // label14
+            // lblNameOpponent
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(439, 46);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 13);
-            this.label14.TabIndex = 11;
-            this.label14.Click += new System.EventHandler(this.label14_Click);
+            this.lblNameOpponent.AutoSize = true;
+            this.lblNameOpponent.Location = new System.Drawing.Point(439, 46);
+            this.lblNameOpponent.Name = "lblNameOpponent";
+            this.lblNameOpponent.Size = new System.Drawing.Size(0, 13);
+            this.lblNameOpponent.TabIndex = 11;
             // 
             // OpponentName
             // 
@@ -199,12 +191,11 @@
             this.OpponentName.Size = new System.Drawing.Size(54, 13);
             this.OpponentName.TabIndex = 10;
             this.OpponentName.Text = "Opponent";
-            this.OpponentName.Click += new System.EventHandler(this.label15_Click);
             // 
             // cboPotions
             // 
             this.cboPotions.FormattingEnabled = true;
-            this.cboPotions.Location = new System.Drawing.Point(15, 233);
+            this.cboPotions.Location = new System.Drawing.Point(15, 498);
             this.cboPotions.Name = "cboPotions";
             this.cboPotions.Size = new System.Drawing.Size(121, 21);
             this.cboPotions.TabIndex = 18;
@@ -213,14 +204,14 @@
             // cboWeapon
             // 
             this.cboWeapon.FormattingEnabled = true;
-            this.cboWeapon.Location = new System.Drawing.Point(15, 204);
+            this.cboWeapon.Location = new System.Drawing.Point(15, 469);
             this.cboWeapon.Name = "cboWeapon";
             this.cboWeapon.Size = new System.Drawing.Size(121, 21);
             this.cboWeapon.TabIndex = 19;
             // 
             // btnUseWeapon
             // 
-            this.btnUseWeapon.Location = new System.Drawing.Point(142, 202);
+            this.btnUseWeapon.Location = new System.Drawing.Point(142, 467);
             this.btnUseWeapon.Name = "btnUseWeapon";
             this.btnUseWeapon.Size = new System.Drawing.Size(75, 23);
             this.btnUseWeapon.TabIndex = 20;
@@ -229,7 +220,8 @@
             // 
             // btnUse
             // 
-            this.btnUse.Location = new System.Drawing.Point(143, 231);
+            this.btnUse.AllowDrop = true;
+            this.btnUse.Location = new System.Drawing.Point(143, 496);
             this.btnUse.Name = "btnUse";
             this.btnUse.Size = new System.Drawing.Size(75, 23);
             this.btnUse.TabIndex = 21;
@@ -240,28 +232,36 @@
             // PlayerPicture
             // 
             this.PlayerPicture.Image = ((System.Drawing.Image)(resources.GetObject("PlayerPicture.Image")));
-            this.PlayerPicture.Location = new System.Drawing.Point(15, 301);
+            this.PlayerPicture.Location = new System.Drawing.Point(15, 173);
             this.PlayerPicture.Name = "PlayerPicture";
             this.PlayerPicture.Size = new System.Drawing.Size(222, 189);
             this.PlayerPicture.TabIndex = 22;
             this.PlayerPicture.TabStop = false;
-            this.PlayerPicture.Click += new System.EventHandler(this.PlayerPicture_Click);
             // 
             // OpponentPicture
             // 
             this.OpponentPicture.Image = ((System.Drawing.Image)(resources.GetObject("OpponentPicture.Image")));
-            this.OpponentPicture.Location = new System.Drawing.Point(314, 301);
+            this.OpponentPicture.Location = new System.Drawing.Point(350, 173);
             this.OpponentPicture.Name = "OpponentPicture";
             this.OpponentPicture.Size = new System.Drawing.Size(222, 189);
             this.OpponentPicture.TabIndex = 23;
             this.OpponentPicture.TabStop = false;
-            this.OpponentPicture.Click += new System.EventHandler(this.OpponentPicture_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(236, 384);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(336, 135);
+            this.textBox1.TabIndex = 24;
             // 
             // BattleController
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.OpponentPicture);
             this.Controls.Add(this.PlayerPicture);
             this.Controls.Add(this.btnUse);
@@ -272,7 +272,7 @@
             this.Controls.Add(this.lblLevelOpponent);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lblNameOpponent);
             this.Controls.Add(this.OpponentName);
             this.Controls.Add(this.lblExperience);
             this.Controls.Add(this.lblManaPoints);
@@ -285,7 +285,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.label1);
             this.Name = "BattleController";
-            this.Text = "BattleControler";
+            this.Text = "BattleController";
             this.Load += new System.EventHandler(this.BattleController_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PlayerPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpponentPicture)).EndInit();
@@ -310,7 +310,7 @@
         private System.Windows.Forms.Label lblLevelOpponent;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblNameOpponent;
         private System.Windows.Forms.Label OpponentName;
         private System.Windows.Forms.ComboBox cboPotions;
         private System.Windows.Forms.ComboBox cboWeapon;
@@ -318,5 +318,6 @@
         private System.Windows.Forms.Button btnUse;
         private System.Windows.Forms.PictureBox PlayerPicture;
         private System.Windows.Forms.PictureBox OpponentPicture;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -28,7 +28,7 @@
             this.Team = 1;
         }
 
-       
+        
 
         public override void Attack(IAttacker opponent)
         {

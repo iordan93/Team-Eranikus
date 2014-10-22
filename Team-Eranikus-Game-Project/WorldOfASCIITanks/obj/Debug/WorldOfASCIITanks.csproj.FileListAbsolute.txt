@@ -34,3 +34,6 @@ D:\SoftUni\OOP\TeamProject\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\ob
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe.config
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.exe
 C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.exe
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\bin\Debug\WorldOfASCIITanks.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\Team-Eranikus-Game-Project\WorldOfASCIITanks\obj\Debug\WorldOfASCIITanks.csprojResolveAssemblyReference.cache
