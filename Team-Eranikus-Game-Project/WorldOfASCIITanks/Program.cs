@@ -72,14 +72,14 @@ namespace WorldOfASCIITanks
         public static MainCharacter HeroChoice(int heroChosen)
         {
             char[,] heroBody = new char[1, 1] { { '*' } };
-            MainCharacter hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 0, 0, 0, 0, 0, 1, null);
+            MainCharacter hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 0, 0, 0, 0,  1, null);
             switch (heroChosen)
             {
-                case 1: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, null);
+                case 1: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 1, null);
                         break;
-                case 2: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, null);
+                case 2: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 1, null);
                         break;
-                case 3: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, null);
+                case 3: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 1, null);
                         break;
             }
             return hero;

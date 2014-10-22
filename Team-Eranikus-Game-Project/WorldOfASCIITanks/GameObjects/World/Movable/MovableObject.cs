@@ -14,127 +14,27 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     public abstract class MovableObject : WorldObject, IMovable, IUnit, IAttacker
     {
-        private int health;
-        private int manaPoints;
-        private int attack;
-        private int defence;
-        private int experience;
-        private int level;
-
-        public MovableObject(
-            MatrixCoords coords,
-            char[,] body,
-            int health,
+        public MovableObject(MatrixCoords coords, char[,] body,
+            int healthPoints,
             int manaPoints,
             int attack,
-            int defence,
             int experience,
             int level,
-            Weapon weapon
-            )
+            Weapon weapon)
             : base(coords, body)
         {
-            this.Health = health;
+            this.Health = healthPoints;
             this.ManaPoints = manaPoints;
             this.AttackPoints = attack;
-            this.DefencePoints = defence;
-            this.Experience = experience;
+            this.ManaPoints = manaPoints;
             this.Level = level;
-            this.AttackWeapon = weapon;
-        }
-
-        public MovableObject(MatrixCoords coords, char[,] body, Weapon weapon)
-            : this(
-                coords,
-                body,
-                CharacterConstants.HEALTH,
-                CharacterConstants.MANAPOINTS,
-                CharacterConstants.ATTACKPOINTS,
-                CharacterConstants.DEFENCEPOINTS,
-                CharacterConstants.EXPERIENCE,
-                CharacterConstants.LEVEL,
-                weapon
-                )
-        {
+            this.Experience = experience;
+            this.Weapon = weapon;
         }
 
         #region Properties
-        public int Health
-        {
-            get
-            {
-                return this.health;
-            }
-            set
-            {
-                this.health = value;
-            }
-        }
 
-        public int ManaPoints
-        {
-            get
-            {
-                return this.manaPoints;
-            }
 
-            set
-            {
-                this.manaPoints = value;
-            }
-        }
-
-        public int AttackPoints
-        {
-            get
-            {
-                return this.attack;
-            }
-
-            set
-            {
-                this.attack = value;
-            }
-        }
-
-        public int DefencePoints
-        {
-            get
-            {
-                return this.defence;
-            }
-
-            set
-            {
-                this.defence = value;
-            }
-        }
-
-        public int Experience
-        {
-            get
-            {
-                return this.experience;
-            }
-
-            set
-            {
-                this.experience = value;
-            }
-        }
-
-        public int Level
-        {
-            get
-            {
-                return this.level;
-            }
-
-            set
-            {
-                this.level = value;
-            }
-        }
         #endregion
 
         public virtual void Move(Direction direction, int step = 1)
@@ -195,13 +95,29 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Coords.Row = newRow;
             this.Coords.Col = newCol;
         }
-
-        public abstract void Attack(IAttacker opponent);
-
         public override void Update()
         {
         }
+        public Weapon Weapon { get; set; }
 
-        public Weapon AttackWeapon { get; set; }
+        public Weapon AttackWeapon
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+        public int Health { get; set; }
+
+        public int ManaPoints { get; set; }
+
+        public int AttackPoints { get; set; }
+
+        public int Level { get; set; }
+        public int Experience { get; set; }
     }
 }

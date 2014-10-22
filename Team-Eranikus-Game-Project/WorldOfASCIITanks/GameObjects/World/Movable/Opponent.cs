@@ -10,16 +10,10 @@
         private string forArtificialInteligance = "right";
         public override int Team { get; protected set; }
         public Opponent(MatrixCoords coords, char[,] body, Weapon weapon)
-            : base(coords, body, 100, 1, 2, 5, 10, 10, weapon)
+            : base(coords, body, 100, 1, 2, 5, 10, weapon)
         {
             // TODO: Implement constructor properly
             this.Team = 2;
-        }
-
-
-        public override void Attack(IAttacker opponent)
-        {
-            throw new System.NotImplementedException();
         }
 
         private void AiOfNPC()

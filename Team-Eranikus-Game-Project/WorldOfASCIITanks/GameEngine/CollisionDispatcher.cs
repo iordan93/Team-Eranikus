@@ -27,7 +27,8 @@ namespace WorldOfASCIITanks.GameEngine
                             (!(allObjects[firstObject] is Wall) || !(allObjects[secondObject] is Wall)))
                         {
                             alreadyCollided[secondObject] = true;
-                            (allObjects[firstObject] as MovableObject).Attack(allObjects[secondObject] as MovableObject);
+
+                            //(allObjects[firstObject] as MovableObject).Attack(allObjects[secondObject] as MovableObject);
 
                             Application.EnableVisualStyles();
                             Application.Run(new BattleController());

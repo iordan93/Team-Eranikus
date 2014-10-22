@@ -54,7 +54,7 @@
     <Compile Include="GameEngine\GameEngine.cs" />
     <Compile Include="GameEngine\MapParser.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
-    <Compile Include="GameObjects\Menu\MenuObject.cs" />
+    <Compile Include="GameObjects\MenuObject.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Fireball.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Frostbolt.cs" />
     <Compile Include="GameObjects\World\Items\Spells\Heal.cs" />
@@ -74,9 +74,10 @@
     <Compile Include="GameObjects\World\Map\WallType.cs" />
     <Compile Include="GameObjects\World\Movable\MainCharacter.cs" />
     <Compile Include="GameObjects\World\Movable\MovableObject.cs" />
-    <Compile Include="GameObjects\World\Movable\NPC.cs" />
+    <Compile Include="GameObjects\World\Movable\Opponent.cs" />
     <Compile Include="Interfaces\IAttacker.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="Interfaces\RandomGenerator.cs" />
     <Compile Include="InventoryItem.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Rendering\ConsoleSettings.cs" />
@@ -100,6 +101,9 @@
     <EmbeddedResource Include="BattleController.resx">
       <DependentUpon>BattleController.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GameObjects\Menu\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

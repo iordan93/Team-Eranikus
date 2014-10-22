@@ -18,21 +18,13 @@
             int health,
             int manaPoints,
             int attack,
-            int defence,
             int experience,
             int level,
             Weapon weapon
            )
-            : base(coords, body, health, manaPoints, attack, defence, experience, level, weapon)
+            : base(coords, body, health, manaPoints, attack, experience, level, weapon)
         {
             this.Team = 1;
-        }
-
-        
-
-        public override void Attack(IAttacker opponent)
-        {
-            opponent.Health = opponent.Health - AttackPoints*AttackModifier(AttackWeapon);
         }
 
         public override void Update()
@@ -41,6 +33,7 @@
 
         public virtual int AttackModifier(Weapon weapon)
         {
+            // depends on level expr...
             int attackMultiplier = 1;
             return attackMultiplier;
         }
