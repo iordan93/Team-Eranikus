@@ -30,7 +30,6 @@ namespace WorldOfASCIITanks.GameEngine
                             (allObjects[firstObject] as MovableObject).Attack(allObjects[secondObject] as MovableObject);
 
                             Application.EnableVisualStyles();
-                            Application.SetCompatibleTextRenderingDefault(false);
                             Application.Run(new BattleController());
 
                         }

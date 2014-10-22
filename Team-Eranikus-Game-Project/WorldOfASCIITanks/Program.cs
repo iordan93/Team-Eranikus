@@ -27,7 +27,23 @@ namespace WorldOfASCIITanks
             GameEngine.GameEngine gameEngine = new GameEngine.GameEngine(renderer, keyboard);
 
             Console.WriteLine("Please select your Hero: \nPress 1 for  Mage\nPress 2 for  Thief\nPress 3 for  Warrior");
-            int heroChosen = int.Parse(Console.ReadLine());
+            int heroChosen = 0;
+            // validates hero choice and let's player choose correctly
+            do
+            {
+                try
+                {
+                    heroChosen = int.Parse(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Please choose 1, 2 or 3");
+                }   
+                
+            } while (!true||heroChosen<1||heroChosen>3);
+            
+            
             Console.Clear();
             // TODO implement interface for the choice of type of character
             MainCharacter hero = HeroChoice(heroChosen);
@@ -49,27 +65,17 @@ namespace WorldOfASCIITanks
         public static MainCharacter HeroChoice(int heroChosen)
         {
             char[,] heroBody = new char[1, 1] { { '*' } };
-
-            // TODO: Provide players with their respective default weapons, as needed (instead of null)
-            if (heroChosen == 1)
+            MainCharacter hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 0, 0, 0, 0, 0, 1, null);
+            switch (heroChosen)
             {
-                MainCharacter heroMage = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, null);
-                return heroMage;
+                case 1: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 0, 1, null);
+                        break;
+                case 2: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, null);
+                        break;
+                case 3: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, null);
+                        break;
             }
-            if (heroChosen == 2)
-            {
-                MainCharacter heroThief = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 0, 1, null);
-                return heroThief;
-            }
-            if (heroChosen == 3)
-            {
-                MainCharacter heroWarrior = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 0, 1, null);
-                return heroWarrior;
-            }
-            else
-            {
-                throw new ArgumentOutOfRangeException("Please choice, 1, 2 or 3");
-            }
+            return hero;
         }
     }
 }
