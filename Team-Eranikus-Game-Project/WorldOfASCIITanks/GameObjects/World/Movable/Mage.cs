@@ -40,5 +40,12 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             return attackMultiplier;
         }
 
+        public override int SpellCastModifier(Spell spell)
+        {
+            int spellModifier = 3;
+
+
+            return spellModifier;
+        }
     }
 }

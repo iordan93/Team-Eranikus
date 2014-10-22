@@ -46,8 +46,10 @@
             return attackMultiplier;
         }
 
-        public virtual void SpellCastModifier()
+        public virtual int SpellCastModifier(Spell spell)
         {
+            int spellModifier = 1;
+            return spellModifier;
         }
 
         public IEnumerable<InventoryItem> Inventory { get; set; }
