@@ -77,6 +77,8 @@
     <Compile Include="GameObjects\World\Movable\NPC.cs" />
     <Compile Include="Interfaces\IAttacker.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="InventoryItem.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="Rendering\ConsoleSettings.cs" />
     <Compile Include="Rendering\MatrixCoords.cs" />
     <Compile Include="Rendering\ConsoleRenderer.cs" />

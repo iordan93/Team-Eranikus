@@ -14,8 +14,6 @@ namespace WorldOfASCIITanks.Interfaces
 
         int AttackPoints { get; set; }
 
-        int DefencePoints { get; set; }
-
         int Experience { get; set; }
     }
 }

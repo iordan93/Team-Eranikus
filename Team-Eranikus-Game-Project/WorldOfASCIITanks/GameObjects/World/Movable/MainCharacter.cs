@@ -48,5 +48,7 @@
         public virtual void SpellCastModifier()
         { 
         }
+
+        public System.Collections.Generic.IEnumerable<InventoryItem> Inventory { get; set; }
     }
 }
