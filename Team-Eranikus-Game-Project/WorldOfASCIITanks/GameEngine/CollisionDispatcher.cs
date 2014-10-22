@@ -29,9 +29,27 @@ namespace WorldOfASCIITanks.GameEngine
                             alreadyCollided[secondObject] = true;
 
                             //(allObjects[firstObject] as MovableObject).Attack(allObjects[secondObject] as MovableObject);
+                            MainCharacter player = new MainCharacter(null, null, 0,0,0,0,0,null);
+                            Opponent enemy = new Opponent(null, null, null);
+                            if (allObjects[firstObject] is MainCharacter)
+                            {
+                                player = allObjects[firstObject] as MainCharacter;
+                            }
+                            if (allObjects[secondObject] is MainCharacter)
+                            {
+                                player = allObjects[secondObject] as MainCharacter;
+                            }
+                            if (allObjects[firstObject] is Opponent)
+                            {
+                                enemy = allObjects[firstObject] as Opponent;
+                            }
+                            if (allObjects[secondObject] is Opponent)
+                            {
+                                enemy = allObjects[secondObject] as Opponent;
+                            }
 
                             Application.EnableVisualStyles();
-                            Application.Run(new BattleController());
+                            Application.Run(new BattleController(player, enemy));
 
                         }
                     }

@@ -49,10 +49,11 @@ namespace WorldOfASCIITanks.Rendering
             StringBuilder output = new StringBuilder();
             string heroLevel = "Level: " + character.Level.ToString();
             string heroHealth = "Health: " + character.Health.ToString();
+            string heroMana = "Mana: " + character.Mana.ToString();
             string heroAttackPoints = "Attack: " + character.AttackPoints.ToString();
             //string heroWeapon = "Weapon: " + character.AttackWeapon.ToString();
 
-            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth, heroAttackPoints);
+            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth, heroMana, heroAttackPoints);
             for (int row = 0; row < this.world.GetLength(0); row++)
             {
                 for (int col = 0; col < this.world.GetLength(1); col++)
@@ -82,10 +83,11 @@ namespace WorldOfASCIITanks.Rendering
 
             string heroLevel = "Level: " + character.Level.ToString();
             string heroHealth = "Health: " + character.Health.ToString();
+            string heroMana = "Mana: " + character.Mana.ToString();
             string heroAttackPoints = "Attack: " + character.AttackPoints.ToString();
             //string heroWeapon = "Weapon: " + character.AttackWeapon.ToString();
 
-            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth, heroAttackPoints);
+            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth,heroMana,  heroAttackPoints);
 
             for (int row = 0; row < this.world.GetLength(0); row++)
             {

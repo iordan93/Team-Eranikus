@@ -23,3 +23,14 @@ C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Battle
 C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
 C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
 C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\bin\Debug\SuperAdventure.exe
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\bin\Debug\SuperAdventure.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\bin\Debug\Engine.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\bin\Debug\Engine.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.exe
+C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\SuperAdventure\obj\Debug\SuperAdventure.pdb

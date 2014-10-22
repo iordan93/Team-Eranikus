@@ -55,7 +55,7 @@
 
         public override void Update()
         {
-            this.AiOfNPC();
+           // this.AiOfNPC();
         }
     }
 }

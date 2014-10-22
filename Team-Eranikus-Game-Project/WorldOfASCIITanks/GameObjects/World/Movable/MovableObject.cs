@@ -24,9 +24,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             : base(coords, body)
         {
             this.Health = healthPoints;
-            this.ManaPoints = manaPoints;
             this.AttackPoints = attack;
-            this.ManaPoints = manaPoints;
+            this.Mana = manaPoints;
             this.Level = level;
             this.Experience = experience;
             this.Weapon = weapon;
@@ -113,11 +112,13 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
         }
         public int Health { get; set; }
 
-        public int ManaPoints { get; set; }
 
         public int AttackPoints { get; set; }
 
         public int Level { get; set; }
         public int Experience { get; set; }
+
+
+        public int Mana { get; set; }
     }
 }

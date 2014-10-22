@@ -29,7 +29,8 @@ namespace WorldOfASCIITanks.GameObjects
             }
             protected set
             {
-                this.coords = new MatrixCoords(value.Row, value.Col);
+                this.coords = value;
+                //this.coords = new MatrixCoords(value.Row, value.Col);
             }
         }
 

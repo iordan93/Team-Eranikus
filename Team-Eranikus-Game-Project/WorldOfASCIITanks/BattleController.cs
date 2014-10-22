@@ -17,19 +17,22 @@ namespace WorldOfAsciiTanksWForms
 {
     public partial class BattleController : Form
     {
-        private MainCharacter _player;
-        private Opponent _opponent;
-        public BattleController()
+        public BattleController(MainCharacter player, Opponent enemy)
         {
             InitializeComponent();
 
-            _player = new MainCharacter(new MatrixCoords(1, 1), new char[1, 1] { { '*' } }, 20, 80, 1, 10, 1, null);
             //_player = hero;
             // lblName.Text = _player.Name.ToString(); +Name??!?!
-            lblLevel.Text = _player.Level.ToString();
-            lblHitPoints.Text = _player.Health.ToString();
-            lblManaPoints.Text = _player.ManaPoints.ToString();
-            lblExperience.Text = _player.Experience.ToString();
+            // print player stats
+            lblLevel.Text = player.Level.ToString();
+            lblHitPoints.Text = player.Health.ToString();
+            lblManaPoints.Text = player.Mana.ToString();
+            lblExperience.Text = player.Experience.ToString();
+            
+            // print opponent stats
+            lblNameOpponent.Text = enemy.Level.ToString();
+            lblLevelOpponent.Text = enemy.Level.ToString();
+            lblHitPointsOpponent.Text = enemy.Health.ToString();
         }
   //*/   private void UpdateWeaponListInUI()
   //      {

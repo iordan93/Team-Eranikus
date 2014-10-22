@@ -32,11 +32,11 @@ namespace SuperAdventure
         }
 
         private void btnNorth_Click(object sender, EventArgs e)
-            {
+        {
             MoveTo(_player.CurrentLocation.LocationToNorth);
-            
+
         }
-        
+
         private void btnEast_Click(object sender, EventArgs e)
         {
             MoveTo(_player.CurrentLocation.LocationToEast);
