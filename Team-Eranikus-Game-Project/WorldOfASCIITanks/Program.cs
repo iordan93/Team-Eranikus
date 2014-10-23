@@ -53,14 +53,15 @@ namespace WorldOfASCIITanks
 
             // TODO implement interface for the choice of type of character
             MainCharacter hero = HeroChoice(heroChosen);
-            hero.AddWeapon(new Knife("qk knife") {  MaxDmg = 30, MinDmg = 20});
+            hero.AddWeapon(new Knife("Steel knife") {  MinDmg = 20, MaxDmg = 30 });
             //hero.AddWeapon(new Knife("mnogo qk knife") { MaxDmg = 30, MinDmg = 20 });
             gameEngine.AddObject(hero);
             gameEngine.AddObject(enemy);
-            Opponent newOpponent = new Opponent(new MatrixCoords(2, 35), new char[,] {{'@'}}, new BattleAxe("qko axe"));
-            Opponent newOpponent2 = new Opponent(new MatrixCoords(7, 30), new char[,] { { '@' } }, new BattleAxe("qko axe"));
-            Opponent newOpponent3 = new Opponent(new MatrixCoords(10, 10), new char[,] { { '@' } }, new BattleAxe("qko axe"));
-            Opponent newOpponent4 = new Opponent(new MatrixCoords(15, 15), new char[,] { { '@' } }, new BattleAxe("qko axe"));
+            Opponent newOpponent = new Opponent(new MatrixCoords(2, 35), new char[,] {{'@'}}, new BattleAxe("Battle Axe"));
+            Opponent newOpponent2 = new Opponent(new MatrixCoords(7, 30), new char[,] { { '@' } }, new Knife("Steel knife"));
+            Opponent newOpponent3 = new Opponent(new MatrixCoords(10, 10), new char[,] { { '@' } }, new BattleAxe("Battle Axe"));
+            Opponent newOpponent4 = new Opponent(new MatrixCoords(15, 15), new char[,] { { '@' } }, new BattleAxe("Battle Axe"));
+            
             gameEngine.AddObject(newOpponent);
             gameEngine.AddObject(newOpponent2);
             gameEngine.AddObject(newOpponent3);

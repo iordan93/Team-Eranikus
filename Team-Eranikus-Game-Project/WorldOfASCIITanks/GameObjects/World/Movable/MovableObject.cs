@@ -121,9 +121,9 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Health -= enemy.AttackPoints;
         }
 
-        public void AddSpell(Potion item)
+        public void AddSpell(Spell item)
         {
-            this.potions.Add(item);
+            this.spells.Add(item);
         }
 
         public void AddWeapon(Weapon weapon)
