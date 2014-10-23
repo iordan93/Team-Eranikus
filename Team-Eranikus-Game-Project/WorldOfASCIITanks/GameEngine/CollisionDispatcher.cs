@@ -27,9 +27,14 @@ namespace WorldOfASCIITanks.GameEngine
                         {
                             alreadyCollided[secondObject] = true;
                             (allObjects[firstObject] as MovableObject).Attack(allObjects[secondObject] as MovableObject);
-
-                            Application.EnableVisualStyles();
-                            //Application.Run(new BattleController());
+                            if ((allObjects[firstObject] as MovableObject).Health <= 0)
+                            {
+                                (allObjects[firstObject] as MovableObject).isAlive = false;
+                            }
+                            if ((allObjects[secondObject] as MovableObject).Health <= 0)
+                            {
+                                (allObjects[secondObject] as MovableObject).isAlive = false;
+                            }
 
                         }
                     }

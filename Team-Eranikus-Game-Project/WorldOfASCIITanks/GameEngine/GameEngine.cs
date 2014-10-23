@@ -75,6 +75,7 @@ namespace WorldOfASCIITanks.GameEngine
                     obj.Update();
                     this.renderer.EnqueueForRendering(obj);
                 }
+                this.allObjects.RemoveAll(x => x.isAlive == false);
                 
             }
         }

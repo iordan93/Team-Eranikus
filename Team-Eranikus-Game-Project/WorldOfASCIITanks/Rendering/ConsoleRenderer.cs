@@ -58,10 +58,10 @@ namespace WorldOfASCIITanks.Rendering
             string heroMana = "Mana: " + character.Mana.ToString();
             string heroAttackPoints = "Attack: " + character.AttackPoints.ToString();
 
-            //string heroWeapon = "Weapon: " + character.AttackWeapon.ToString();
+            string heroWeapon = "Weapon: " + character.AttackPoints.ToString();
             string[] asd = new string[2];
 
-            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth, heroMana, heroAttackPoints, inventory.ToString());
+            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth, heroMana, heroAttackPoints);
             for (int row = 0; row < this.world.GetLength(0); row++)
             {
                 for (int col = 0; col < this.world.GetLength(1); col++)
@@ -76,7 +76,7 @@ namespace WorldOfASCIITanks.Rendering
                         output.Append(statsForRender[0][i]);
                     }
                     statsForRender.RemoveAt(0);
-                    
+
                 }
                 output.Append(Environment.NewLine);
             }

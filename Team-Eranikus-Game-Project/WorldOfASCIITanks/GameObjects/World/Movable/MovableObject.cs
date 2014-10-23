@@ -115,17 +115,10 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Coords.Row = newRow;
             this.Coords.Col = newCol;
         }
-        public void AttackWithWeapon(Weapon weapon, IAttacker enemy)
+        public void Attack(IAttacker enemy)
         {
-            if (this.weapons.Contains(weapon))
-            {
-                Random randomWeaponDmg = new Random();
-                enemy.Health -= this.AttackPoints + randomWeaponDmg.Next(weapon.MinDmg, weapon.MaxDmg);
-            }
-            else
-            {
-                throw new ArgumentException("weapon does not exists in maincharacter or opponent");
-            }
+            enemy.Health -= this.AttackPoints;
+            this.Health -= enemy.AttackPoints;
         }
 
         public void AddSpell(Potion item)

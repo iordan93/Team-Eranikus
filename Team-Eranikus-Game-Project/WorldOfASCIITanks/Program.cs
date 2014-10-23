@@ -57,7 +57,14 @@ namespace WorldOfASCIITanks
             //hero.AddWeapon(new Knife("mnogo qk knife") { MaxDmg = 30, MinDmg = 20 });
             gameEngine.AddObject(hero);
             gameEngine.AddObject(enemy);
-            
+            Opponent newOpponent = new Opponent(new MatrixCoords(2, 35), new char[,] {{'@'}}, new BattleAxe("qko axe"));
+            Opponent newOpponent2 = new Opponent(new MatrixCoords(7, 30), new char[,] { { '@' } }, new BattleAxe("qko axe"));
+            Opponent newOpponent3 = new Opponent(new MatrixCoords(10, 10), new char[,] { { '@' } }, new BattleAxe("qko axe"));
+            Opponent newOpponent4 = new Opponent(new MatrixCoords(15, 15), new char[,] { { '@' } }, new BattleAxe("qko axe"));
+            gameEngine.AddObject(newOpponent);
+            gameEngine.AddObject(newOpponent2);
+            gameEngine.AddObject(newOpponent3);
+            gameEngine.AddObject(newOpponent4);
             foreach (var item in map)
             {
                 gameEngine.AddObject(item);
@@ -77,11 +84,11 @@ namespace WorldOfASCIITanks
             MainCharacter hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 0, 0, 0, 0,  1, null);
             switch (heroChosen)
             {
-                case 1: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 20, 80, 1, 10, 1, null);
+                case 1: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 2220, 80, 5, 10, 1, null);
                         break;
-                case 2: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 50, 50, 1, 10, 1, null);
+                case 2: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 1250, 50, 5, 10, 1, null);
                         break;
-                case 3: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 80, 20, 1, 10, 1, null);
+                case 3: hero = new MainCharacter(new MatrixCoords(1, 1), heroBody, 3280, 20, 5, 10, 1, null);
                         break;
             }
             return hero;

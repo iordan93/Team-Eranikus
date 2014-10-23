@@ -7,6 +7,8 @@ namespace WorldOfASCIITanks.Interfaces
 
     public interface IAttacker : IUnit
     {
-        void AttackWithWeapon(Weapon weapon, IAttacker enemy);
+        void Attack(IAttacker enemy);
+
+        int AttackPoints { get; set; }
     }
 }
