@@ -9,6 +9,8 @@ using System.Threading;
 using WorldOfASCIITanks.GameObjects.World;
 using WorldOfASCIITanks.GameObjects.World.Map;
 using WorldOfASCIITanks.GameObjects.World.Movable;
+using WorldOfASCIITanks.Rendering;
+using WorldOfASCIITanks.GameObjects.World.Items.Weapons;
 
 namespace WorldOfASCIITanks.GameEngine
 {
@@ -60,6 +62,14 @@ namespace WorldOfASCIITanks.GameEngine
             while (true)
             {
                 
+                Opponent opponent = new Opponent(new MatrixCoords(2,2), new char[,]{{'@'}}, new BattleAxe("qko axe"));
+                foreach (var item in this.allObjects)
+                {
+                    if (item is Opponent)
+                    {
+                        opponent = item as Opponent;
+                    }
+                }
                 this.renderer.RenderAll(character);
                 //this.renderer.RenderAllVisible(character);
 
@@ -70,11 +80,13 @@ namespace WorldOfASCIITanks.GameEngine
                 this.renderer.ClearQueue();
 
                 CollisionDispatcher.SeeForCollisions(this.allObjects);
+
                 foreach (var obj in allObjects)
                 {
                     obj.Update();
                     this.renderer.EnqueueForRendering(obj);
                 }
+                
                 this.allObjects.RemoveAll(x => x.isAlive == false);
                 
             }

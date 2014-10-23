@@ -57,7 +57,6 @@ namespace WorldOfASCIITanks.Rendering
             string heroHealth = "Health: " + character.Health.ToString();
             string heroMana = "Mana: " + character.Mana.ToString();
             string heroAttackPoints = "Attack: " + character.AttackPoints.ToString();
-
             string heroWeapon = "Weapon: " + character.AttackPoints.ToString();
             string[] asd = new string[2];
 
@@ -122,6 +121,7 @@ namespace WorldOfASCIITanks.Rendering
                     statsForRender.RemoveAt(0);
 
                 }
+
                 output.Append(Environment.NewLine);
             }
 
