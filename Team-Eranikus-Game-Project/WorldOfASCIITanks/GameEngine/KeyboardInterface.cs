@@ -18,6 +18,8 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
 
         public event EventHandler OnDownPressed;
 
+        public event EventHandler onPotionPressed;
+
         //TODO: method is not implemented at MainCharacter and NPC classes
         public void ProcessInput()
         {
@@ -44,6 +46,10 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 if (key.Key == ConsoleKey.S || key.Key == ConsoleKey.DownArrow)
                 {
                     this.OnDownPressed(this, new EventArgs());
+                }
+                if (key.Key == ConsoleKey.P)
+                {
+                    this.onPotionPressed(this, new EventArgs());
                 }
             }
         }

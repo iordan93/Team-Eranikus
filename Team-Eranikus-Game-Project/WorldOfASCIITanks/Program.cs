@@ -75,6 +75,7 @@ namespace WorldOfASCIITanks
             keyboard.OnLeftPressed += (sender, eventInfo) => { hero.Move(Direction.Left); };
             keyboard.OnRightPressed += (sender, eventInfo) => { hero.Move(Direction.Right); };
             keyboard.OnUpPressed += (sender, eventInfo) => { hero.Move(Direction.Top); };
+            keyboard.onPotionPressed += (sencer, eventInfo) => { hero.Health += 5; };
 
             gameEngine.Run();
         }
