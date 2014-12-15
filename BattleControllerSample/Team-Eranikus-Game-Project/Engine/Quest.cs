@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Engine
 {
@@ -17,13 +13,19 @@ namespace Engine
             this.RewardGold = rewardGold;
             this.QuestCompletionItems = new List<QuestCompletionItem>();
         }
+
         public int ID { get; set; }
+
         public string Name { get; set; }
+
         public string Description { get; set; }
+
         public int RewardExperiencePoints { get; set; }
+
         public int RewardGold { get; set; }
+
         public Item RewardItem { get; set; }
+
         public List<QuestCompletionItem> QuestCompletionItems { get; set; }
-        
     }
 }

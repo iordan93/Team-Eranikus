@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WorldOfASCIITanks.GameObjects.World.Items
+﻿namespace WorldOfASCIITanks.GameObjects.World.Items
 {
     public class Rage : Spell
     {
-         public Rage()
-             : base(5,5,0,5)
+        public Rage()
+            : base(5, 5, 0, 5)
         {
         }
     }

@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WorldOfASCIITanks.Rendering;
+﻿using WorldOfASCIITanks.GameObjects.World.Items;
 using WorldOfASCIITanks.GameObjects.World.Items.Weapons;
-using WorldOfASCIITanks.GameObjects.World.Items;
+using WorldOfASCIITanks.Rendering;
 
 namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
     public class Thief : MainCharacter
-    {       
+    {
         public Thief(MatrixCoords coords, char[,] body)
             : base(coords, body, 50, 50, 1, 0, 1, new Knife("qk knife"))
-        { 
+        {
         }
 
         public override int AttackModifier(Weapon weapon)
@@ -44,9 +39,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
         {
             int spellModifier = 2;
 
-
             return spellModifier;
         }
-
     }
 }

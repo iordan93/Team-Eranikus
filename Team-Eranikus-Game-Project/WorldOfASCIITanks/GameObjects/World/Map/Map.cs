@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WorldOfASCIITanks.Interfaces;
+﻿using WorldOfASCIITanks.Interfaces;
 using WorldOfASCIITanks.Rendering;
 
 namespace WorldOfASCIITanks.GameObjects.World.Map
@@ -19,7 +14,6 @@ namespace WorldOfASCIITanks.GameObjects.World.Map
 
         public override void Update()
         {
-
         }
     }
 }

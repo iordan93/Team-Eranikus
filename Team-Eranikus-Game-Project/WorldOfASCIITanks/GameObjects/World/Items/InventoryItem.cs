@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace WorldOfASCIITanks
+﻿namespace WorldOfASCIITanks
 {
     public class InventoryItem
     {
@@ -14,7 +9,7 @@ namespace WorldOfASCIITanks
         }
 
         public Item Details { get; set; }
-        public int Quantity { get; set; }
 
+        public int Quantity { get; set; }
     }
 }

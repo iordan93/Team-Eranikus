@@ -95,12 +95,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="ClassDiagram.cd" />
     <None Include="Properties\DataSources\WorldOfASCIITanks.GameObjects.World.Items.Weapons.BattleAxe.datasource" />
     <None Include="Properties\DataSources\WorldOfASCIITanks.GameObjects.World.Items.Weapons.Knife.datasource" />
     <None Include="Properties\DataSources\WorldOfASCIITanks.GameObjects.World.Items.Weapons.MagicStaff.datasource" />
-    <None Include="WorldOfAsciiTanksDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameObjects\Menu\" />

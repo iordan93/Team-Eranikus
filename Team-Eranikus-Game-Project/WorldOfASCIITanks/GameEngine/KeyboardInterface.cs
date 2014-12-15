@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WorldOfASCIITanks.Interfaces;
 
 namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
-    class KeyboardInterface : IUserInterface
+    internal class KeyboardInterface : IUserInterface
     {
-
         public event EventHandler OnLeftPressed;
 
         public event EventHandler OnRightPressed;

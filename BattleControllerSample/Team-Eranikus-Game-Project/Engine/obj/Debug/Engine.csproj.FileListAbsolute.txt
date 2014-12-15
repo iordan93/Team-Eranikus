@@ -1,15 +1,5 @@
-C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\Engine\bin\Debug\Engine.dll
-C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\Engine\bin\Debug\Engine.pdb
-C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.dll
-C:\Users\user\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.pdb
-C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\bin\Debug\Engine.dll
-C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\bin\Debug\Engine.pdb
-C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
-C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.dll
-C:\Users\vasko2\Documents\Visual Studio 2013\Projects\Team-Eranikus\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.pdb
-C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\bin\Debug\Engine.dll
-C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\bin\Debug\Engine.pdb
-C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.dll
-C:\Users\user\Documents\Visual Studio 2013\Projects\New folder\trunk\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.pdb
+D:\GIT\Team-Eranikus\BattleControllerSample\Team-Eranikus-Game-Project\Engine\bin\Debug\Engine.dll
+D:\GIT\Team-Eranikus\BattleControllerSample\Team-Eranikus-Game-Project\Engine\bin\Debug\Engine.pdb
+D:\GIT\Team-Eranikus\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+D:\GIT\Team-Eranikus\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.dll
+D:\GIT\Team-Eranikus\BattleControllerSample\Team-Eranikus-Game-Project\Engine\obj\Debug\Engine.pdb

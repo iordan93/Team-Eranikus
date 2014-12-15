@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using WorldOfASCIITanks.GameObjects;
-using WorldOfASCIITanks.Rendering;
-using WorldOfASCIITanks.Interfaces;
-using WorldOfASCIITanks;
 using WorldOfASCIITanks.GameObjects.World.Movable;
+using WorldOfASCIITanks.Interfaces;
 
 namespace WorldOfASCIITanks.Rendering
 {
@@ -15,6 +11,7 @@ namespace WorldOfASCIITanks.Rendering
     {
         // Everything is done at this class
         public static int collsForRenderingStats = 15;
+
         private int vision = 6;
         private char[,] placeForRenderStats;
         private char[,] world;
@@ -75,7 +72,6 @@ namespace WorldOfASCIITanks.Rendering
                         output.Append(statsForRender[0][i]);
                     }
                     statsForRender.RemoveAt(0);
-
                 }
                 output.Append(Environment.NewLine);
             }
@@ -94,7 +90,7 @@ namespace WorldOfASCIITanks.Rendering
             string heroAttackPoints = "Attack: " + character.AttackPoints.ToString();
             //string heroWeapon = "Weapon: " + character.AttackWeapon.ToString();
 
-            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth,heroMana,  heroAttackPoints);
+            List<string> statsForRender = MakeHeroStats(heroLevel, heroHealth, heroMana, heroAttackPoints);
 
             for (int row = 0; row < this.world.GetLength(0); row++)
             {
@@ -119,7 +115,6 @@ namespace WorldOfASCIITanks.Rendering
                         output.Append(statsForRender[0][i]);
                     }
                     statsForRender.RemoveAt(0);
-
                 }
 
                 output.Append(Environment.NewLine);
@@ -138,14 +133,13 @@ namespace WorldOfASCIITanks.Rendering
         //    string heroDefensePoints = "Defense: " + character.DefencePoints.ToString();
         //    string heroExperiance = "Experiance: " + character.Experience.ToString();
         //    string heroWeapon = "Weapon: " + character.AttackWeapon.ToString();
-            
+
         //    char[] statsForRender = MakeHeroStats(heroLevel, heroHealth, heroMana, heroAttackPoints, heroDefensePoints, heroExperiance, heroWeapon);
 
         //    for (int row = 0; row < this.placeForRenderStats.GetLength(0); row++)
         //    {
         //        for (int col = this.world.GetLength(1), endIndex = 0; col < this.placeForRenderStats.GetLength(1) && (endIndex < collsForRenderingStats); col++, endIndex++)
         //        {
-
         //        }
         //    }
         //    throw new NotImplementedException();
@@ -160,6 +154,7 @@ namespace WorldOfASCIITanks.Rendering
             }
             return stats;
         }
+
         public void ClearQueue()
         {
             for (int row = 0; row < this.world.GetLength(0); row++)
@@ -170,8 +165,5 @@ namespace WorldOfASCIITanks.Rendering
                 }
             }
         }
-
-
-        
     }
 }

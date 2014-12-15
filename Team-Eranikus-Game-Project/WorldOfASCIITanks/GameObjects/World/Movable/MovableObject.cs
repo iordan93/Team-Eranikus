@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using WorldOfASCIITanks.GameEngine;
+using WorldOfASCIITanks.GameObjects.World.Items;
 using WorldOfASCIITanks.Interfaces;
 using WorldOfASCIITanks.Rendering;
-using WorldOfASCIITanks.Constants;
-using WorldOfASCIITanks.GameObjects.World.Items;
 
 namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
@@ -18,11 +13,17 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
         private IList<Weapon> weapons = new List<Weapon>();
         private IList<Spell> spells = new List<Spell>();
         private IList<Potion> potions = new List<Potion>();
+
         public Weapon Weapon { get; set; }
+
         public int Health { get; set; }
+
         public int AttackPoints { get; set; }
+
         public int Level { get; set; }
+
         public int Experience { get; set; }
+
         public int Mana { get; set; }
 
         public List<Item> Inventory
@@ -32,6 +33,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
                 return this.inventory;
             }
         }
+
         public MovableObject(MatrixCoords coords, char[,] body,
             int healthPoints,
             int manaPoints,
@@ -49,14 +51,10 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Weapon = weapon;
         }
 
-        #region Properties
-
-
-        #endregion
-        
         public override void Update()
         {
         }
+
         public virtual void Move(Direction direction, int step = 1)
         {
             int newRow = this.Coords.Row;
@@ -115,6 +113,7 @@ namespace WorldOfASCIITanks.GameObjects.World.Movable
             this.Coords.Row = newRow;
             this.Coords.Col = newCol;
         }
+
         public void Attack(IAttacker enemy)
         {
             enemy.Health -= this.AttackPoints;

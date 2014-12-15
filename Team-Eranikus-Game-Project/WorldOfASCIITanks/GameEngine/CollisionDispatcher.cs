@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Collections.Generic;
 using WorldOfASCIITanks.GameObjects;
 using WorldOfASCIITanks.GameObjects.World.Map;
 using WorldOfASCIITanks.GameObjects.World.Movable;
 
 namespace WorldOfASCIITanks.GameEngine
 {
-    class CollisionDispatcher
+    internal class CollisionDispatcher
     {
         public static void SeeForCollisions(IList<GameObject> allObjects)
         {
@@ -37,7 +32,6 @@ namespace WorldOfASCIITanks.GameEngine
                                 (allObjects[secondObject] as MovableObject).isAlive = false;
                                 (allObjects[firstObject] as MovableObject).Level++;
                             }
-
                         }
                     }
                 }

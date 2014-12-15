@@ -1,5 +1,4 @@
-﻿using WorldOfASCIITanks.Interfaces;
-using WorldOfASCIITanks.Rendering;
+﻿using WorldOfASCIITanks.Rendering;
 
 namespace WorldOfASCIITanks.GameObjects.World.Map
 {
@@ -13,12 +12,15 @@ namespace WorldOfASCIITanks.GameObjects.World.Map
                 case WallType.Vertical:
                     this.body = new char[1, 1] { { '|' } };
                     break;
+
                 case WallType.Horizontal:
                     this.body = new char[1, 1] { { '-' } };
                     break;
+
                 case WallType.Corner:
                     this.body = new char[1, 1] { { '+' } };
                     break;
+
                 default:
                     break;
             }

@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WorldOfASCIITanks.GameObjects;
-using WorldOfASCIITanks.Interfaces;
+﻿using System.Collections.Generic;
 using System.Threading;
+using WorldOfASCIITanks.GameObjects;
 using WorldOfASCIITanks.GameObjects.World;
+using WorldOfASCIITanks.GameObjects.World.Items.Weapons;
 using WorldOfASCIITanks.GameObjects.World.Map;
 using WorldOfASCIITanks.GameObjects.World.Movable;
+using WorldOfASCIITanks.Interfaces;
 using WorldOfASCIITanks.Rendering;
-using WorldOfASCIITanks.GameObjects.World.Items.Weapons;
 
 namespace WorldOfASCIITanks.GameEngine
 {
-    class GameEngine
+    internal class GameEngine
     {
         private IRenderer renderer;
         private IUserInterface userInterface;
@@ -22,8 +18,6 @@ namespace WorldOfASCIITanks.GameEngine
         private List<GameObject> allObjects;
         public static List<Wall> allWalls;
         private IList<WorldObject> map = MapParser.ParseMap("../../WorldMaps/map.txt");
-
-
 
         public GameEngine(IRenderer renderer, IUserInterface userInterface)
         {
@@ -33,7 +27,6 @@ namespace WorldOfASCIITanks.GameEngine
             allWalls = new List<Wall>();
         }
 
-
         public void AddObject(GameObject obj)
         {
             if (obj is Wall)
@@ -41,7 +34,7 @@ namespace WorldOfASCIITanks.GameEngine
                 AddWall(obj as Wall);
                 this.allObjects.Add(obj);
             }
-            else if(obj is MainCharacter)
+            else if (obj is MainCharacter)
             {
                 character = obj as MainCharacter;
                 this.allObjects.Add(obj);
@@ -50,19 +43,18 @@ namespace WorldOfASCIITanks.GameEngine
             {
                 this.allObjects.Add(obj);
             }
-            
         }
 
         private void AddWall(Wall wall)
         {
             allWalls.Add(wall);
         }
+
         public void Run()
         {
             while (true)
             {
-                
-                Opponent opponent = new Opponent(new MatrixCoords(2,2), new char[,]{{'@'}}, new BattleAxe("qko axe"));
+                Opponent opponent = new Opponent(new MatrixCoords(2, 2), new char[,] { { '@' } }, new BattleAxe("qko axe"));
                 foreach (var item in this.allObjects)
                 {
                     if (item is Opponent)
@@ -87,7 +79,6 @@ namespace WorldOfASCIITanks.GameEngine
                     this.renderer.EnqueueForRendering(obj);
                 }
                 this.allObjects.RemoveAll(x => x.isAlive == false);
-                
             }
         }
     }

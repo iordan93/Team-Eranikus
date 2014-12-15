@@ -1,17 +1,11 @@
 ﻿namespace WorldOfASCIITanks.GameObjects.World.Movable
 {
-    using WorldOfASCIITanks.Rendering;
-    using WorldOfASCIITanks.Interfaces;
-    using WorldOfASCIITanks.GameEngine;
-    using WorldOfASCIITanks.GameObjects.World.Items.Weapons;
-    using System;
     using WorldOfASCIITanks.GameObjects.World.Items;
-    using System.Collections.Generic;
+    using WorldOfASCIITanks.Rendering;
 
     public class MainCharacter : MovableObject
     {
         public override int Team { get; protected set; }
-        
 
         public MainCharacter(
             MatrixCoords coords,
@@ -27,8 +21,6 @@
         {
             this.Team = 1;
         }
-
-        
 
         public override void Update()
         {
@@ -46,9 +38,5 @@
             int spellModifier = 1;
             return spellModifier;
         }
-
-        
-
-        
     }
 }

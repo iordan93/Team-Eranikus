@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WorldOfASCIITanks.GameObjects.World.Items
+﻿namespace WorldOfASCIITanks.GameObjects.World.Items
 {
     public class Heal : Spell
     {
         public Heal()
-            : base(0,0,20,0)
+            : base(0, 0, 20, 0)
         {
         }
     }

@@ -7,8 +7,6 @@ using WorldOfASCIITanks.Rendering;
 
 namespace WorldOfASCIITanks.GameEngine
 {
-    using WorldOfASCIITanks.GameObjects.World.Movable;
-
     public static class MapParser
     {
         private const string MapEnding = "*****";
@@ -27,7 +25,6 @@ namespace WorldOfASCIITanks.GameEngine
                     {
                         if (line[col] != Empty)
                         {
-
                             var currentObject = GetWorldObject(line[col], row, col);
                             objects.Add(currentObject);
                         }
@@ -45,12 +42,15 @@ namespace WorldOfASCIITanks.GameEngine
             {
                 case '-':
                     return new Wall(coords, WallType.Horizontal);
+
                 case '|':
                     return new Wall(coords, WallType.Vertical);
+
                 case '+':
                     return new Wall(coords, WallType.Corner);
+
                 case '@':
-                    return new Wall(coords,WallType.Horizontal); // TODO: Implement coordinate changing for MainCharacter
+                    return new Wall(coords, WallType.Horizontal); // TODO: Implement coordinate changing for MainCharacter
                 case '#':
                     return new Wall(coords, WallType.Horizontal); // TODO: Implement coirdinate changing for NPC
                 default:

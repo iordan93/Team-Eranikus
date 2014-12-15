@@ -1,4 +1,5 @@
 ﻿using WorldOfASCIITanks.GameEngine;
+
 namespace WorldOfASCIITanks.Interfaces
 {
     public interface IMovable
